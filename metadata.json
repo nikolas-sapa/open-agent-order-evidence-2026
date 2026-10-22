@@ -1,0 +1,45 @@
+{
+  "project": "Order Evidence",
+  "event": "Open Agent Hackathon 2026",
+  "track": "The Agent That Can Explain Why",
+  "buildStartedOn": "2026-10-22",
+  "status": "working-preview-live-integration-incomplete",
+  "data": "Synthetic only; fixed business assessment dates, actual execution timestamps stored separately",
+  "sponsors": {
+    "Meterless": {
+      "engine": "Markovian reference",
+      "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
+      "license": "Apache-2.0",
+      "execution": "Genuine executor drives retrieval and assessment callbacks in preview;20/20 evaluation runs completed",
+      "Nightshift": "Adapter implemented; authenticated route and inference not verified; official M1 executable not launched after rejected macOS assessment"
+    },
+    "Zetaris": {
+      "role": "Bounded source retrieval through local account UI proxy",
+      "status": "Adapter implemented, order-source mapping not live verified; local platform images restoring",
+      "earlierGenericSetup": "9/9 vendor checks passed October19, separate from application integration"
+    },
+    "Cursor": { "status": "Installed, development contribution NOT PERFORMED, sponsor credits unclaimed" },
+    "NVIDIA": { "status": "No model inference performed; no NVIDIA award eligibility claimed" }
+  },
+  "codingTools": [{ "name": "Codex", "contribution": "Core, integration, UI, tests, review and documentation" }],
+  "developmentModel": "Exact session model identifier not independently recorded",
+  "runtimeModel": null,
+  "providerTokens": null,
+  "providerCost": null,
+  "frameworks": [],
+  "runtime": "Node24.19.0, native ES modules/HTTP/fetch/test/fs/crypto, experimental TypeScript transform",
+  "runtimeNpmDependencies": [],
+  "importedComponents": ["Pinned unmodified Meterless engine and Apache2.0 license", "Participant-owned pre-existing Ledger static layout reference", "Geist font files with SIL OFL"],
+  "verification": {
+    "nativeTestsPassed": 22,
+    "previewClassifications": "20/20",
+    "realMarkovianPreviewRuns": "20/20",
+    "liveA01A02A03": "NOT RUN",
+    "processRestartPersistence": "2 process restarts passed in native test",
+    "A05": "BLOCKED, no genuine Zetaris plus Nightshift application investigation recorded",
+    "A06": "NOT RUN",
+    "mobileScreenshot": "NOT RUN"
+  },
+  "submissionCreated": false,
+  "publicDeployment": false
+}

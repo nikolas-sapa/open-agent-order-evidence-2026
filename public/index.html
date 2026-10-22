@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Investigate synthetic order exceptions with cited evidence and revision-bound human review.">
+    <title>Order Evidence</title>
+    <link rel="icon" href="data:,">
+    <link rel="preload" href="/fonts/geist-regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to investigation</a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/" aria-label="Order Evidence home"><span class="brand-mark" aria-hidden="true"><span></span></span>Order Evidence</a>
+        <span class="workspace-label">Operations workspace</span>
+        <span class="badge">Synthetic data</span>
+      </div>
+    </header>
+    <main class="workspace" id="workspace">
+      <div class="page-heading"><div><p class="eyebrow">Order investigation</p><h1>Know what changed.<br><span class="muted">See what supports it.</span></h1></div><p class="page-note">One order, its evidence and a draft you review.<br>No messages or orders are sent.</p></div>
+      <section class="control-surface" aria-labelledby="start-heading">
+        <h2 class="sr-only" id="start-heading">Start an investigation</h2>
+        <form id="investigate-form" class="investigate-form">
+          <div class="field order-field"><label for="order">Order</label><select id="order" name="order" required disabled><option value="">Loading orders…</option></select></div>
+          <div class="field"><label for="mode">Evidence mode</label><select id="mode" name="mode"><option value="live">Live integrations</option><option value="preview">Offline preview</option></select></div>
+          <button class="button primary" id="investigate" type="submit" disabled>Investigate order <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="mode-help" id="mode-help">Live mode uses Zetaris evidence and Nightshift inference. Integration failures stay visible.</p>
+        <div class="integration-strip" id="integrations" aria-label="Integration availability"><span>Checking integrations…</span></div>
+      </section>
+      <div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+      <div class="workbench">
+        <div class="investigation-column">
+          <section class="surface investigation-surface" aria-labelledby="investigation-heading">
+            <div class="surface-chrome"><h2 id="investigation-heading">Investigation</h2><span class="mono" id="investigation-meta">Not started</span></div>
+            <div id="result"><div class="empty-state"><div class="empty-marker" aria-hidden="true">01</div><h3>Start with an order.</h3><p>Investigate to see its current status, supporting records and missing facts. Every factual claim links to the evidence behind it.</p></div></div>
+          </section>
+          <section class="surface" aria-labelledby="draft-heading" id="draft-section" hidden><div class="surface-chrome"><h2 id="draft-heading">Human review</h2><span class="mono">Draft only</span></div><div class="surface-body"><p class="draft-text" id="draft"></p><p class="review-help">Approval records your review of this revision. It does not send a message or change an order.</p><div class="review-actions"><button class="button secondary" id="approve" type="button">Approve this draft</button><span class="review-state" id="approval-state"></span></div></div><div class="history-block"><h3>Approval history</h3><div id="approvals"></div></div></section>
+          <section class="surface" aria-labelledby="changes-heading" id="changes-section" hidden><div class="surface-chrome"><h2 id="changes-heading">Evidence changes</h2><span class="mono">Synthetic updates</span></div><div class="surface-body"><form class="update-form" id="update-form"><div class="field"><label for="update">Update to apply</label><select id="update" name="update"></select></div><button class="button secondary" type="submit" id="apply-update">Apply update</button></form><p class="review-help">New evidence creates a revision. An approval of older evidence stays in history and no longer applies.</p></div><div class="history-block"><h3>Revision history</h3><div id="revisions"></div></div></section>
+          <section class="saved-section" aria-labelledby="saved-heading"><div class="section-title"><h2 id="saved-heading">Saved investigations</h2><button class="text-button" type="button" id="refresh-saved">Refresh</button></div><div id="saved"><p class="muted small">Loading saved investigations…</p></div></section>
+        </div>
+        <aside class="evidence-column surface" aria-labelledby="evidence-heading"><div class="surface-chrome"><h2 id="evidence-heading">Evidence ledger</h2><span class="mono" id="evidence-count">No records</span></div><p class="evidence-intro">Immutable references to the records used for this revision.</p><div id="evidence"><div class="empty-state compact"><p>Cited records appear here after an investigation. Source versions and timestamps remain attached to each revision.</p></div></div></aside>
+      </div>
+      <footer class="workspace-footer"><span>Order Evidence</span><span>Synthetic workspace · Human approval required</span></footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "checkedUTC": "2026-10-22T07:12:32.828865+00:00",
+  "source": "https://github.com/Meterless/Meterless",
+  "pinnedCommit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
+  "currentMainCommit": "1742dec56a66e58eef9dda2d2b865823758ca8cd",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "63e29fc8231b53757a77fbc371071c91d768621efa1e68b1d9ff8d1bb7c4a0ef",
+      "pinnedGitBlob": "d1a6bb88af6e6b79738dd192fb491a99eb2a7fe3",
+      "currentGitBlob": "d1a6bb88af6e6b79738dd192fb491a99eb2a7fe3",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/AGENTS.md",
+      "sha256": "7523f8f73a2856dc390fb88a582bf9985693971040fce05636b3bb0946db0c40",
+      "pinnedGitBlob": "3239bad9bc1b482331e4e643935bd05d44a7cd40",
+      "currentGitBlob": "dedfb7732d32165f105f63b6f96f9025e39fd36f",
+      "sameAtCurrent": false
+    },
+    {
+      "path": "engines/markovian/reference/README.md",
+      "sha256": "4f1739c675e53e1a1490d1e1b1ec3f1a051685634caf973cf24779363b9969fd",
+      "pinnedGitBlob": "487699062ff4eea5cb247a9c2a96f555ed1452e4",
+      "currentGitBlob": "40879c2aadccafa8d87ede468b4ac2d080934d07",
+      "sameAtCurrent": false
+    },
+    {
+      "path": "engines/markovian/reference/package.json",
+      "sha256": "71f2384e8d989cb276256ae948b9e04d0cb61d04222f32af5220d612ded34fb7",
+      "pinnedGitBlob": "b0c970afad735fcedaa4e5c310c2ac84bfac4115",
+      "currentGitBlob": "b0c970afad735fcedaa4e5c310c2ac84bfac4115",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/carryover.ts",
+      "sha256": "30ec1905e6238a1da806c98c854ead688e9d670b62257aba375568ab562cfd6c",
+      "pinnedGitBlob": "5cea8d5f54f4afe70ef2515409e9e4f5bfc4e8d5",
+      "currentGitBlob": "5cea8d5f54f4afe70ef2515409e9e4f5bfc4e8d5",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/configManager.ts",
+      "sha256": "4a4e71ca2164e83a1f67ecc561c7be0dbc5e11329b2e571f75ad7642fa598855",
+      "pinnedGitBlob": "fe261324d25643bfbdbc1d7b81a138b215b1cbb5",
+      "currentGitBlob": "fe261324d25643bfbdbc1d7b81a138b215b1cbb5",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/history.ts",
+      "sha256": "c08f865008a899cae55ee7b6c4506c8d73cf823bd28ecae1bdf36c6e864039f3",
+      "pinnedGitBlob": "a925ce35be23c5872f7db6575190a166125235d4",
+      "currentGitBlob": "a925ce35be23c5872f7db6575190a166125235d4",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/index.ts",
+      "sha256": "7bbf1235c592fdaf5cc864add9451908739b8bde3e1d5f47175689a02532d003",
+      "pinnedGitBlob": "ec443ff44a6f72107242fabc1dd8d552cf5383f6",
+      "currentGitBlob": "ec443ff44a6f72107242fabc1dd8d552cf5383f6",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/markers.ts",
+      "sha256": "344a6d2a46d1f8ffefbd80ccd936492666e7f699a9584c7a3238190bfaa409a9",
+      "pinnedGitBlob": "023cb455797137ddcc54dff3d26c5a18cb1d1d1d",
+      "currentGitBlob": "023cb455797137ddcc54dff3d26c5a18cb1d1d1d",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/orchestrator.ts",
+      "sha256": "b6538a8a2092d93224526a2cb277e703d600b7ccad620b0a3fc190571163315c",
+      "pinnedGitBlob": "f4ad26ff4ff00224d214a45c46a734de4c7484e6",
+      "currentGitBlob": "f4ad26ff4ff00224d214a45c46a734de4c7484e6",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/progress.ts",
+      "sha256": "f29a7d49922e759b61cd9bddf06a1bee0b7955c667692d54443dce17da2ef997",
+      "pinnedGitBlob": "e1eb6618388dde69e8515196e988ab5e3531abb7",
+      "currentGitBlob": "e1eb6618388dde69e8515196e988ab5e3531abb7",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/promptBuilder.ts",
+      "sha256": "ee785eb26a6f07c32f2cede8dcb4257191ac9b5f4d0ed9f8cb20e25bf481b073",
+      "pinnedGitBlob": "04f29a939e541baa068c244ebb32d625bc55211d",
+      "currentGitBlob": "04f29a939e541baa068c244ebb32d625bc55211d",
+      "sameAtCurrent": true
+    },
+    {
+      "path": "engines/markovian/reference/src/types.ts",
+      "sha256": "94c54137dd03e17ef9e838b5b424b8195599fcf69ebcae76895bef7c22dcd667",
+      "pinnedGitBlob": "fb56a25cff95813ef76629e44e1fe0265041338a",
+      "currentGitBlob": "fb56a25cff95813ef76629e44e1fe0265041338a",
+      "sameAtCurrent": true
+    }
+  ],
+  "executionPerformed": false
+}

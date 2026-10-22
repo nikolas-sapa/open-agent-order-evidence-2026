@@ -1,0 +1,441 @@
+{
+  "evaluatedAt": "2026-10-22T08:54:15.183Z",
+  "mode": "preview",
+  "scope": "Synthetic local evidence, real vendored Markovian executor. No Zetaris or Nightshift requests.",
+  "node": "v24.19.0",
+  "cases": [
+    {
+      "case": "S01",
+      "orderId": "SYN-ORD-01",
+      "elapsedMs": 25.351957999999996,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-01",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S02",
+      "orderId": "SYN-ORD-02",
+      "elapsedMs": 4.073791999999997,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-02",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S03",
+      "orderId": "SYN-ORD-03",
+      "elapsedMs": 2.274458999999979,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-03",
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S04",
+      "orderId": "SYN-ORD-04",
+      "elapsedMs": 3.5640830000000108,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-04",
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S05",
+      "orderId": "SYN-ORD-05",
+      "elapsedMs": 2.989250000000027,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "stale evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-05",
+        "status": "undetermined",
+        "causes": [
+          "stale evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S06",
+      "orderId": "SYN-ORD-06",
+      "elapsedMs": 4.003875000000022,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-06",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S07",
+      "orderId": "SYN-ORD-07",
+      "elapsedMs": 2.2213749999999948,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-07",
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S08",
+      "orderId": "SYN-ORD-08",
+      "elapsedMs": 3.765000000000015,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "unfilled quantity",
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-08",
+        "status": "at-risk",
+        "causes": [
+          "unfilled quantity",
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S09",
+      "orderId": "SYN-ORD-09",
+      "elapsedMs": 3.92108300000001,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-09",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S10",
+      "orderId": "SYN-ORD-10",
+      "elapsedMs": 2.2812079999999924,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-10",
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S11",
+      "orderId": "SYN-ORD-11",
+      "elapsedMs": 3.798957999999999,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-11",
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S12",
+      "orderId": "SYN-ORD-12",
+      "elapsedMs": 4.401666999999975,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-12",
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S13",
+      "orderId": "SYN-ORD-13",
+      "elapsedMs": 4.621458999999959,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-13",
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S14",
+      "orderId": "SYN-ORD-14",
+      "elapsedMs": 3.9781249999999773,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-14",
+        "status": "undetermined",
+        "causes": [
+          "missing evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S15",
+      "orderId": "SYN-ORD-15",
+      "elapsedMs": 4.0042080000000055,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-15",
+        "status": "undetermined",
+        "causes": [
+          "conflicting evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S16",
+      "orderId": "SYN-ORD-16",
+      "elapsedMs": 3.9404589999999757,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-16",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S17",
+      "orderId": "SYN-ORD-17",
+      "elapsedMs": 4.0142079999999964,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "unfilled quantity"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-17",
+        "status": "at-risk",
+        "causes": [
+          "unfilled quantity"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S18",
+      "orderId": "SYN-ORD-18",
+      "elapsedMs": 2.5812909999999647,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "cancelled replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-18",
+        "status": "at-risk",
+        "causes": [
+          "cancelled replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S19",
+      "orderId": "SYN-ORD-19",
+      "elapsedMs": 3.3963340000000244,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-19",
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    },
+    {
+      "case": "S20",
+      "orderId": "SYN-ORD-20",
+      "elapsedMs": 2.445625000000007,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-20",
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "engineStatus": "completed",
+      "chunks": 2
+    }
+  ],
+  "liveAcceptance": {
+    "A01": "NOT RUN",
+    "A02": "NOT RUN",
+    "A03": "NOT RUN",
+    "A04": "Application process restart test passed separately",
+    "A05": "BLOCKED: restored Zetaris source and Nightshift runtime not verified",
+    "A06": "NOT RUN: no live model cost/latency"
+  },
+  "providerUsage": null,
+  "providerCost": null,
+  "cursorContribution": "NOT PERFORMED"
+}

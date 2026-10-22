@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {"orderId":"SYN-ORD-01","status":"on-track","causes":[]},
+    {"orderId":"SYN-ORD-02","status":"on-track","causes":[]},
+    {"orderId":"SYN-ORD-03","status":"at-risk","causes":["late replenishment"]},
+    {"orderId":"SYN-ORD-04","status":"undetermined","causes":["missing evidence"]},
+    {"orderId":"SYN-ORD-05","status":"undetermined","causes":["stale evidence"]},
+    {"orderId":"SYN-ORD-06","status":"on-track","causes":[]},
+    {"orderId":"SYN-ORD-07","status":"at-risk","causes":["late replenishment"]},
+    {"orderId":"SYN-ORD-08","status":"at-risk","causes":["unfilled quantity","late replenishment"]},
+    {"orderId":"SYN-ORD-09","status":"on-track","causes":[]},
+    {"orderId":"SYN-ORD-10","status":"undetermined","causes":["missing evidence"]},
+    {"orderId":"SYN-ORD-11","status":"undetermined","causes":["conflicting evidence"]},
+    {"orderId":"SYN-ORD-12","status":"undetermined","causes":["conflicting evidence"]},
+    {"orderId":"SYN-ORD-13","status":"undetermined","causes":["missing evidence"]},
+    {"orderId":"SYN-ORD-14","status":"undetermined","causes":["missing evidence"]},
+    {"orderId":"SYN-ORD-15","status":"undetermined","causes":["conflicting evidence"]},
+    {"orderId":"SYN-ORD-16","status":"on-track","causes":[]},
+    {"orderId":"SYN-ORD-17","status":"at-risk","causes":["unfilled quantity"]},
+    {"orderId":"SYN-ORD-18","status":"at-risk","causes":["cancelled replenishment"]},
+    {"orderId":"SYN-ORD-19","status":"at-risk","causes":["late replenishment"]},
+    {"orderId":"SYN-ORD-20","status":"at-risk","causes":["late replenishment"]}
+  ],
+  "updates": [
+    {"updateId":"U01","orderId":"SYN-ORD-03","status":"on-track","causes":[]},
+    {"updateId":"U02","orderId":"SYN-ORD-05","status":"on-track","causes":[]},
+    {"updateId":"U03","orderId":"SYN-ORD-07","status":"at-risk","causes":["late replenishment"]},
+    {"updateId":"U04","orderId":"SYN-ORD-08","status":"at-risk","causes":["late replenishment"]},
+    {"updateId":"U05","orderId":"SYN-ORD-17","status":"on-track","causes":[]},
+    {"updateId":"U06","orderId":"SYN-ORD-12","status":"on-track","causes":[]},
+    {"updateId":"U07","orderId":"SYN-ORD-13","status":"on-track","causes":[]},
+    {"updateId":"U08","orderId":"SYN-ORD-18","status":"on-track","causes":[]},
+    {"updateId":"U09","orderId":"SYN-ORD-19","status":"on-track","causes":[]},
+    {"updateId":"U10","orderId":"SYN-ORD-20","status":"at-risk","causes":["cancelled replenishment"]}
+  ]
+}

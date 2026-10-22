@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+artifacts/private/
+.DS_Store
+*.log
