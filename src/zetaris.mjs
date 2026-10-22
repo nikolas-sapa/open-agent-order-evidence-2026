@@ -3,22 +3,26 @@ import { parseEnv } from 'node:util';
 import { randomUUID } from 'node:crypto';
 import { AppError, readJsonResponse } from './errors.mjs';
 
-const BASE = 'http://127.0.0.1:3000';
 export const VIEW = 'order_evidence.records';
 export class Zetaris {
-  constructor({ username, password, platformEnvFile = process.env.ZETARIS_PLATFORM_ENV_FILE } = {}) {
+  constructor({ username, password, uiPort, platformEnvFile = process.env.ZETARIS_PLATFORM_ENV_FILE } = {}) {
     let platform = {};
     if (platformEnvFile) {
       try { platform = parseEnv(readFileSync(platformEnvFile, 'utf8')); }
       catch { throw new AppError('UNCONFIGURED', 'The private Zetaris configuration could not be read.'); }
     }
+    const port = String(uiPort ?? process.env.ZETARIS_UI_PORT ?? platform.UI_PORT ?? 3300);
+    if (!/^[1-9]\d{0,4}$/.test(port) || Number(port) > 65535) {
+      throw new AppError('UNCONFIGURED', 'Zetaris UI port must be an integer from 1 to 65535.');
+    }
+    this.base = `http://127.0.0.1:${port}`;
     this.username = username ?? process.env.ZETARIS_USERNAME ?? platform.ZETARIS_ADMIN_EMAIL;
     this.password = password ?? process.env.ZETARIS_PASSWORD ?? platform.ZETARIS_ADMIN_PASSWORD;
     this.session = null;
   }
   async request(path, body, headers = {}) {
     try {
-      const response = await fetch(BASE + path, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Request-ID': randomUUID(), ...headers },
+      const response = await fetch(this.base + path, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Request-ID': randomUUID(), ...headers },
         body: JSON.stringify(body), redirect: 'error', signal: AbortSignal.timeout(45000) });
       return await readJsonResponse(response, 'Zetaris');
     } catch (error) {

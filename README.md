@@ -6,7 +6,7 @@ Working first build: inspect a promise, inventory and supplier evidence; investi
 
 ## Current verification
 
--22/22 native tests passed on Node24.19.0. Tests include20exact classifications,5uncertainty cases,10supplier updates, idempotency, two process restarts, HTTP revision/approval safety and source-scope rejection.
+-24/24 native tests passed on Node24.19.0. Tests include20exact classifications,5uncertainty cases,10supplier updates, idempotency, two process restarts, HTTP revision/approval safety and source-scope rejection.
 - Separate preview evaluation:20/20 genuine Markovian runs completed;20/20 classifications match sealed evaluator labels;20/20 outputs reference existing immutable evidence records. Reference existence is not an independent semantic citation audit.
 - Real browser check: investigate order003, inspect citation, record an automated preview draft approval, apply U01, observe on-track revision2 and invalidated historical approval. Keyboard traversal works; no horizontal overflow at1265px. Mobile screenshot verification remains outstanding.
 - **Live end-to-end acceptance has not passed.** Zetaris local images are being restored; the order-view response mapping is unverified. Nightshift's official M1 build failed macOS execution assessment, so it was not launched. No real model response, token billing or live latency measured. No fabricated sponsor success.
@@ -46,7 +46,7 @@ Copy `.env.example` to private `.env`, never commit it. Configure either the exi
 
 Nightshift requires its **Console Runtime token**, separate from the NVIDIA provider credential. The app discovers actual `meterless/*` routes, then requests a bounded JSON selection. Unsupported selections get at most one correction. Provider usage is retained only if actually reported; price and underlying concrete model remain unknown until independently verified.
 
-Endpoints are fixed to local ZetarisUI3000 and Nightshift8088. No arbitrary network destinations, SQL or file paths accepted through HTTP. Source view is `order_evidence.records`, holding one `order_id,payload` row per synthetic case. Source registration and the UI-proxy response parser still require a successful live check before this adapter can be called verified.
+Endpoints use loopback only: Zetaris UI port defaults to3300, Nightshift8088. Set the vendor's `UI_PORT`, `GUI_URL` and `ALLOWED_ORIGINS` consistently; the app reads `UI_PORT` from the private vendor file, with optional `ZETARIS_UI_PORT` override. Verify the selected listener belongs to Zetaris before enabling credentials. No arbitrary network destinations, SQL or file paths accepted through HTTP. Source view is `order_evidence.records`, holding one `order_id,payload` row per synthetic case. Source registration and the UI-proxy response parser still require a successful live check before this adapter can be called verified.
 
 ## Architecture
 
@@ -74,4 +74,4 @@ Markovian drives retrieval and assessment callbacks, with explicit completed-sta
 
 ## Remaining before submission
 
-Restore and verify real Zetaris source retrieval; resolve Nightshift distribution/access and run a real model feature; record actual provider/model/usage/cost; complete genuine Cursor regression-test contribution; execute live A01–A06; mobile browser verification; record1–4minute video and produce8-slide deck from verified results; review final entry and submit. No public deployment has been made.
+Restore and verify real Zetaris source retrieval; resolve Nightshift distribution/access and run a real model feature; record actual provider/model/usage/cost; complete genuine Cursor regression-test contribution; execute live A01–A06; record1–4minute video and produce8-slide deck from verified results; review final entry and submit. No public deployment has been made.

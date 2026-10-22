@@ -18,10 +18,19 @@
       "status": "Adapter implemented, order-source mapping not live verified; local platform images restoring",
       "earlierGenericSetup": "9/9 vendor checks passed October19, separate from application integration"
     },
-    "Cursor": { "status": "Installed, development contribution NOT PERFORMED, sponsor credits unclaimed" },
-    "NVIDIA": { "status": "No model inference performed; no NVIDIA award eligibility claimed" }
+    "Cursor": {
+      "status": "Installed, development contribution NOT PERFORMED, sponsor credits unclaimed"
+    },
+    "NVIDIA": {
+      "status": "No model inference performed; no NVIDIA award eligibility claimed"
+    }
   },
-  "codingTools": [{ "name": "Codex", "contribution": "Core, integration, UI, tests, review and documentation" }],
+  "codingTools": [
+    {
+      "name": "Codex",
+      "contribution": "Core, integration, UI, tests, review and documentation"
+    }
+  ],
   "developmentModel": "Exact session model identifier not independently recorded",
   "runtimeModel": null,
   "providerTokens": null,
@@ -29,16 +38,20 @@
   "frameworks": [],
   "runtime": "Node24.19.0, native ES modules/HTTP/fetch/test/fs/crypto, experimental TypeScript transform",
   "runtimeNpmDependencies": [],
-  "importedComponents": ["Pinned unmodified Meterless engine and Apache2.0 license", "Participant-owned pre-existing Ledger static layout reference", "Geist font files with SIL OFL"],
+  "importedComponents": [
+    "Pinned unmodified Meterless engine and Apache2.0 license",
+    "Participant-owned pre-existing Ledger static layout reference",
+    "Geist font files with SIL OFL"
+  ],
   "verification": {
-    "nativeTestsPassed": 22,
+    "nativeTestsPassed": 24,
     "previewClassifications": "20/20",
     "realMarkovianPreviewRuns": "20/20",
     "liveA01A02A03": "NOT RUN",
     "processRestartPersistence": "2 process restarts passed in native test",
     "A05": "BLOCKED, no genuine Zetaris plus Nightshift application investigation recorded",
     "A06": "NOT RUN",
-    "mobileScreenshot": "NOT RUN"
+    "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked"
   },
   "submissionCreated": false,
   "publicDeployment": false
