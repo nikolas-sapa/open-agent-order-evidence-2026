@@ -53,6 +53,8 @@ Endpoints use loopback only: Zetaris UI port defaults to3300, Nightshift8088. Se
 
 On a fresh, configured Zetaris installation, `npm run seed:zetaris` creates the fixed synthetic container/view and verifies all20 returned payloads. Plain CREATE only: an existing container stops setup before view writes. This is intentionally not an overwrite or repair command. The local instance is already seeded; do not rerun setup there. It does not implement live source updates or prove a Nightshift investigation.
 
+For the dedicated synthetic demonstration only, `node --env-file=.env scripts/update-zetaris-demo.mjs` applies the fixed U01 supplier update to the real source. It requires exactly20 raw payloads matching the base fixtures before replacing this generated view, preserves19 orders and existing record versions, and verifies all20 afterward. An exact U01 retry performs no write; drift stops the command. Run with exclusive ownership of this local demo source, since preflight and replacement are not a transaction. Re-investigate Order003 in Live mode afterward to review the linked revision and old approval invalidation. This helper accepts no arguments and cannot edit an arbitrary source.
+
 ## Architecture
 
 ```mermaid

@@ -38,10 +38,16 @@ export class Zetaris {
     const token = data.idToken ?? data.token ?? data.accessToken;
     const orgId = data.orgId;
     if (typeof token !== 'string' || !token || !/^\d+$/.test(String(orgId))) throw new AppError('UNAUTHORIZED', 'Zetaris login did not return a valid scoped session.');
-    this.session = { token, orgId: String(orgId) };
+    // JWT metadata only schedules refresh; the service still authenticates every request.
+    let expiresAt = null;
+    try {
+      const { exp } = JSON.parse(Buffer.from(token.split('.')[1], 'base64url').toString('utf8'));
+      if (typeof exp === 'number' && Number.isSafeInteger(exp * 1000)) expiresAt = exp * 1000;
+    } catch { /* Opaque tokens retain the existing unauthorized-response handling. */ }
+    this.session = { token, orgId: String(orgId), expiresAt };
   }
   async query(sql, pageLimit = 100) {
-    if (!this.session) await this.login();
+    if (!this.session || (Number.isFinite(this.session.expiresAt) && this.session.expiresAt <= Date.now() + 30_000)) await this.login();
     try {
       return await this.request('/api/proxy/sql-editor/sqls/run-query', { sql, limit: pageLimit },
         { Authorization: `Bearer ${this.session.token}`, 'X-Org-ID': this.session.orgId });

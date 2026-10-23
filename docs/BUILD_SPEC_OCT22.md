@@ -43,6 +43,16 @@ Implementation: replace the evaluator's stale hardcoded global statuses with an 
 
 Live evaluation runner: before implementation, require20 real Zetaris retrievals and20 completed Markovian investigations with validated Nightshift selections; target at least18/20 exact status/cause sets,20/20 immutable citation checks. Each failed request is recorded as failed, never replaced with preview evidence. Capture actual per-call model/usage/cost as reported, leaving absent values unknown. Persist a partial report after each case so interruption cannot become an implicit pass. Use an isolated temporary store, never the review workspace's saved investigations. No provider keys, prompts, credentials or raw error bodies in the report. Implementation reuses the existing live investigator, source and model adapter, with evaluator labels used only after execution. Non-goals: no policy changes, new provider, cloud spend or source writes.
 
+## Governed-source demonstration update
+
+Tests before implementation: the dedicated U01 demonstration helper accepts only the existing20-case synthetic view. Require count20 and deep-equal each payload against the fixed base fixtures (or the exact already-updated U01 state). Any extra/missing/drifted row yields0 writes. An exact retry yields0 writes. One allowed update preserves19 other payloads and all existing immutable records, adds the defined U01 version and verifies20/20 results after the write. Fixed SQL/view names, escaped literals; no DROP, arbitrary SQL, credentials or additional updates. Test these guards with the real helper export; actual20-query source verification remains mandatory separately.
+
+Implementation: separate developer/demo CLI, reusing the actual Zetaris adapter and existing U01 fixture transformation. Read and verify the whole dedicated source before replacing its generated view; never change the setup command's plain-CREATE protection. This is the approved synthetic demonstration, not an ERP write or general source editor.
+
+## Zetaris session expiry
+
+Session-expiry repair, tests before implementation: real Zetaris login returns a JWT with a15-minute expiry. A fresh independent source read passes after the long-running workspace reports query400, consistent with its expired cached session. Two real local HTTP queries before expiry must use1 login; a query within30seconds of token expiry must obtain a second session before sending SQL, with0 expired-token SQL requests. Invalid/opaque JWT metadata must not prevent authentication; expiry parsing schedules refresh only, never establishes authorization. Implementation reads the actual token's numeric exp claim server-side, caches its time with the session, and refreshes ahead of expiry. No token logging, credential changes, new destinations or retry of source writes.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.
