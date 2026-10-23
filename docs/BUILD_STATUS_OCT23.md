@@ -1,10 +1,10 @@
 # Order Evidence build status, October23
 
-Current status supersedes BUILD_STATUS_OCT22.md. Private build branch: `build/order-evidence`. Submission not created.
+Current status supersedes BUILD_STATUS_OCT22.md. Private build branch: `build/order-evidence`. HackOS draft saved for The Agent That Can Explain Why,1669character description and repository link. Draft persisted after Save Draft; final submission not sent.
 
 ## Verified
 
-- 27/27 native tests,0 failures. Dedicated genuine Cursor U07 test independently passes1/1. Cursor authored107lines through its desktop agent using included access; no paid upgrade or credit redemption.
+- 27/27 native tests,0 failures. Dedicated genuine Cursor U07 test independently passes1/1. Cursor authored107lines through its desktop agent using included access; no paid upgrade. Organizer October22 announcement confirms Cursor is optional and no free event credits exist.
 - Real Zetaris account login, scoped current UI-proxy query and fixed source registration passed. All20 retrieved order payloads deep-equal their synthetic fixtures, including immutable record versions. Source verification finished2026-10-23T04:51:58.945Z in107782ms (setup plus20 retrievals, not model latency).
 - Actual duplicate-container CREATE returns HTTP400 with a duplicate-object message. Setup stops before writing a view on a conflict. No OR REPLACE or DROP. Existing seeded source must not be blindly reseeded.
 - Running app restarted with the private vendor configuration, loopback UI3300. Independent application source check retrieves order003's3records. Nightshift remains explicitly unconfigured, so the combined check exits1 as expected.
@@ -15,6 +15,14 @@ Current status supersedes BUILD_STATUS_OCT22.md. Private build branch: `build/or
 - Nightshift official M1 executable remains rejected by macOS and unlaunched. Vendor support has not supplied a signed build. Any per-app security exception still requires an explicit participant decision. No protection bypass or provider token was configured.
 - Run genuine authenticated Nightshift route discovery/inference, record actual runtime/model/usage and any reported cost. No model/NVIDIA inference claim yet.
 - Execute full live acceptance, including changed evidence in the governed source and revision/approval behavior. Current source-only proof does not close A05 or A06.
-- Record the1–4minute demo, finalize the8-slide draft against actual results, review and submit. No public deployment.
+- Complete the1–4minute demo and finalize the8-slide draft against actual live results, establish judge access to the private repository, review and submit. A3:01 narrated screenshot walkthrough and eight-slide deck are uploaded to the saved HackOS draft. Both remain clearly labelled DRAFT. No public deployment.
 
 Zetaris driver, API, UI and PostgreSQL are healthy in dedicated Docker context `colima-zetaris-hackathon`; generic bootstrap still running when source verification completed. Unrelated app on3000 and default Colima profile remain untouched. Credentials and tokens remain outside Git.
+
+## Submission preparation follow-up
+
+A fresh clone of f59b5ac passes27/27 native tests and20/20 preview evaluations with0 dependency installs. Default GitHub branch is build/order-evidence. Repository remains private, so external judge access must be established before final handoff. Evidence: [fresh-clone receipt](evidence/fresh-clone-oct23.json).
+
+[Official October22 Build update](evidence/organizer-build-update-oct22.md) closes the Cursor-credit inquiry: no credits offered, Cursor optional. The separate Nightshift Power requirement remains confirmed by sponsor support; core Markovian tests do not replace it.
+
+Draft media persisted after reload. Uploaded video plays at1920x1080,3:01, with no player error; uploaded deck downloads with the same SHA256 as the validated local export. No final Submit click. [Media evidence](evidence/submission-media-oct23.json).

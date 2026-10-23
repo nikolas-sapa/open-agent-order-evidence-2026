@@ -1,6 +1,6 @@
 # Submission material, first-build working draft
 
-Not ready for submission. Demonstrations describe the verified offline preview unless explicitly stated. Real Zetaris retrieval passed20/20 and genuine Cursor U07 development completed October23. Nightshift inference, full live acceptance, video and final deck remain open.
+HackOS draft saved with the approved track,1669character description and repository link. A3:01 narrated preview walkthrough and eight-slide draft deck are uploaded and persisted after reload. Final submission remains pending. Not ready for final submission. Demonstrations describe the verified offline preview unless explicitly stated. Real Zetaris retrieval passed20/20 and genuine Cursor U07 development completed October23. Nightshift inference, full live acceptance, video and final deck remain open.
 
 ## Eight-slide content
 
@@ -52,4 +52,6 @@ First release is synthetic, single-order and local. Full live model/update accep
 
 165–180s: State current limitations: Nightshift access, full live evaluation, model accounting and final recording still required. Real Zetaris retrieval and genuine Cursor-agent contribution are complete. End with the working review-and-revision workflow, not a claim of submission readiness.
 
-This is a script, not a recorded demo. Final video must be re-recorded against verified live behavior before the final entry claims that behavior.
+Original script above is preparatory. An actual181.47second narrated screenshot walkthrough now exists and is uploaded to the HackOS draft. It uses eight real UI captures, standard local Daniel narration and persistent DRAFT/Synthetic offline preview labels. It is not continuous screen recording or live inference proof. Uploaded playback verified3:01/1080p. Final video must be revised against genuine Nightshift behavior before the final entry claims that behavior.
+
+October22 official update, verifiedOctober23: Cursor optional and no free event credits. Actual Cursor contribution remains disclosed. Separate sponsor clarification keeps Nightshift Power integration required. Repository remains private; judge access must be established. Full description saved in SUBMISSION_DESCRIPTION_DRAFT.txt.

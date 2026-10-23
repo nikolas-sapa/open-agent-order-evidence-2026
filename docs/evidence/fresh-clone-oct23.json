@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-23T05:57:12.261Z",
+  "sourceCommit": "f59b5ac78d2ca22f34b970cfa25993accf8dd3cd",
+  "defaultBranch": "build/order-evidence",
+  "repositoryVisibility": "PRIVATE",
+  "externalJudgeAccess": "NOT VERIFIED, public access or judge invitation required before final handoff",
+  "tests": {
+    "passed": 27,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "053f07614ae3b4d33fdfba84d85d3d2f9afbb7d3a4f39f43fa2ebe3e1bbf9708"
+  },
+  "preview": {
+    "evaluated": 20,
+    "completedEngineRuns": 20,
+    "classifications": 20,
+    "referenceCoverage": 20,
+    "semanticCitationAudit": false,
+    "logSha256": "2bf0b302d396368b1f6edb4b2dcf3edd967add9a72256b3c2d7550345f0bc353"
+  },
+  "dependencyInstalls": 0
+}

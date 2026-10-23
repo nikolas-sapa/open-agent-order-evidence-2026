@@ -21,7 +21,7 @@
       "evidence": "docs/evidence/zetaris-source-oct23.json"
     },
     "Cursor": {
-      "status": "Genuine desktop-agent U07 HTTP regression authored and executed October23 using included access; sponsor credits unclaimed, no paid upgrade",
+      "status": "Genuine desktop-agent U07 test completed using included access. Organizer October22 announcement: Cursor optional; no free Cursor credits for this event. No paid upgrade purchased.",
       "evidence": "docs/CURSOR_PROVENANCE_OCT23.md"
     },
     "NVIDIA": {
@@ -61,8 +61,23 @@
     "A06": "NOT RUN",
     "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked",
     "realZetarisSource": "20/20 payloads verified; app source check order003 retrieves3records",
-    "cursorU07": "1/1 dedicated test; Cursor then-current suite25/25; independent current suite27/27"
+    "cursorU07": "1/1 dedicated test; Cursor then-current suite25/25; independent current suite27/27",
+    "freshClone": "PASS October23:27/27 native tests,20/20 preview classifications and real Markovian runs,0 dependency installs"
   },
-  "submissionCreated": false,
-  "publicDeployment": false
+  "submissionCreated": true,
+  "publicDeployment": false,
+  "submissionDraft": {
+    "saved": true,
+    "track": "The Agent That Can Explain Why",
+    "descriptionCharacters": 1669,
+    "video": "https://iframe.mediadelivery.net/embed/778121/78e47793-d716-4590-af60-c6d41bafd227",
+    "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/4c9e9bbf742c4809a58fd04c75424dec.pptx",
+    "finalSubmitted": false,
+    "mediaStatus": "DRAFT synthetic preview; both uploads persisted after reload",
+    "videoDurationSeconds": 181.489,
+    "videoPlayback": "PASS muted browser playback1920x1080,readyState4,errornull",
+    "deckDownload": "PASS exact SHA256 matches local export"
+  },
+  "submissionStatus": "DRAFT saved in HackOS, not submitted",
+  "submitted": false
 }

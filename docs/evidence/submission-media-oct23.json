@@ -1,0 +1,59 @@
+{
+  "createdAt": "2026-10-23T09:40:07.426Z",
+  "status": "DRAFT ONLY, not final live acceptance",
+  "video": {
+    "path": "outputs/order-evidence-preview-draft-oct23.mp4",
+    "sha256": "e69e02fdb22fc86388d39038aa598d5c478e867636188262c52e3a40f5b39f11",
+    "bytes": 4826427,
+    "durationSeconds": 181.472667,
+    "resolution": "1920x1080",
+    "videoCodec": "H.264/yuv420p",
+    "audioCodec": "AAC48kHz mono",
+    "format": "Eight actual application screenshots assembled as a walkthrough, not continuous screen recording",
+    "voice": "Standard macOS Daniel en_GB synthetic narration",
+    "capturedMode": "Synthetic offline preview",
+    "persistentDraftLabel": true,
+    "automatedDemoApproval": true,
+    "liveModelInference": false,
+    "fullDecode": "PASS,0 errors (worker verification)",
+    "independentRootCheck": "ffprobe duration/codecs/size checked; frames1 and6 inspected"
+  },
+  "deck": {
+    "path": "outputs/order-evidence-draft-oct23.pptx",
+    "sha256": "2ca75726e6dbfce757f67a99aba828c975aac6701b874da8d54cd73346db4c28",
+    "bytes": 60323,
+    "slides": 8,
+    "sourceArtifact": "artifact_hlJjO8-_O5O-KYOeh6bV0LBHWIbp-YP7",
+    "packageIntegrity": "PASS",
+    "layoutFindings": 0,
+    "firstPartyImport": "PASS",
+    "productScreenshotBytes": 24792,
+    "renderedSlides": 8,
+    "visualReview": "Live eight-slide set inspected, local exported slide7 screenshot/typography rechecked",
+    "nativePowerPointExecution": false
+  },
+  "externalSubmission": {
+    "draftSaved": true,
+    "finalSubmitted": false,
+    "persistedAfterReload": true,
+    "video": "https://iframe.mediadelivery.net/embed/778121/78e47793-d716-4590-af60-c6d41bafd227",
+    "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/4c9e9bbf742c4809a58fd04c75424dec.pptx",
+    "videoPlayback": {
+      "durationSeconds": 181.489,
+      "width": 1920,
+      "height": 1080,
+      "readyState": 4,
+      "error": null
+    },
+    "deckDownloadMatchesLocalSha256": true,
+    "savedReceipt": "work/submission-draft-saved-oct23.txt",
+    "screenshot": "work/submission-draft-uploaded-oct23.png"
+  },
+  "remaining": [
+    "Nightshift explicit app-only exception decision or signed build",
+    "genuine Runtime/model request and live acceptance",
+    "final demo/deck revision against live result",
+    "judge access to private repository",
+    "review required declarations and final submission receipt"
+  ]
+}

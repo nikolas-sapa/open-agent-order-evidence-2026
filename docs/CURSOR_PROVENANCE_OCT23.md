@@ -2,7 +2,7 @@
 
 Cursor3.27.6 desktop agent authored only `test/cursor-u07.test.mjs` (107lines), under the Codex-prepared task in CURSOR_U07_TASK.md. Codex operated the installed desktop on the participant's behalf. No manual participant coding is claimed. Core application, source integration, UI and remaining tests belong to Codex assistance.
 
-Actual desktop chat title: **Cursor access implementation**. Observed model label: **Cursor Grok4.6 Medium**. Exact upstream model identifier and billable provider accounting were not independently exposed. Cursor reported included agent access; no purchase or upgrade occurred. Browser and desktop account labels differed; their quotas are not treated as one account. Sponsor credit redemption remains unresolved.
+Actual desktop chat title: **Cursor access implementation**. Observed model label: **Cursor Grok4.6 Medium**. Exact upstream model identifier and billable provider accounting were not independently exposed. Cursor reported included agent access; no purchase or upgrade occurred. Browser and desktop account labels differed; their quotas are not treated as one account. Organizer announcement October22 confirms no free Cursor credits for this event; Cursor is now optional.
 
 Native completion transcript reports Worked2m11s and these command results:
 
