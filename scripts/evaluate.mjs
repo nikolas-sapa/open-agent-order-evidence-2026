@@ -26,11 +26,10 @@ try {
       matches, referenceCoverage, engineStatus: revision.engine.status, chunks: revision.engine.chunks.length });
   }
   const report = { evaluatedAt: new Date().toISOString(), mode: 'preview', scope: 'Synthetic local evidence, real vendored Markovian executor. No Zetaris or Nightshift requests.',
-    node: process.version, cases, liveAcceptance: { A01: 'NOT RUN', A02: 'NOT RUN', A03: 'NOT RUN', A04: 'Application process restart test passed separately', A05: 'BLOCKED: restored Zetaris source and Nightshift runtime not verified', A06: 'NOT RUN: no live model cost/latency' },
-    providerUsage: null, providerCost: null, cursorContribution: 'NOT PERFORMED' };
+    node: process.version, cases, notEvaluatedByThisRun: ['liveAcceptance', 'providerUsage', 'providerCost', 'cursorContribution'] };
   mkdirSync(new URL('../evaluation/results/', import.meta.url), { recursive: true });
   writeFileSync(new URL('../evaluation/results/preview.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ evaluated: cases.length, completedEngineRuns: cases.filter(item => item.engineStatus === 'completed').length,
-    classifications: cases.filter(item => item.matches).length, referenceCoverage: cases.filter(item => item.referenceCoverage).length, liveAcceptance: report.liveAcceptance }));
+    classifications: cases.filter(item => item.matches).length, referenceCoverage: cases.filter(item => item.referenceCoverage).length, notEvaluatedByThisRun: report.notEvaluatedByThisRun }));
   if (cases.some(item => !item.matches || !item.referenceCoverage || item.engineStatus !== 'completed')) process.exitCode = 1;
 } finally { rmSync(directory, { recursive: true, force: true }); }

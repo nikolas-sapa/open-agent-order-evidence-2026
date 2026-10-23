@@ -11,7 +11,7 @@ Working first build: inspect a promise, inventory and supplier evidence; investi
 - Real browser check: investigate order003, inspect citation, record an automated preview draft approval, apply U01, observe on-track revision2 and invalidated historical approval. Keyboard traversal works; desktop1440x900 and mobile390x844 have0 horizontal overflow. Mobile citation opens supplier v2.
 - Real Zetaris source setup and retrieval passed October23:20/20 registered payloads deep-equal the fixed synthetic cases. An actual duplicate-container CREATE returned HTTP400. See [source receipts](docs/evidence/zetaris-source-oct23.json).
 - Genuine Cursor desktop agent authored the U07 HTTP regression using included access. Dedicated test1/1, Cursor's then-current suite25/25, independently checked current suite27/27. Codex operated the desktop; no manual participant authorship claimed. See [provenance](docs/CURSOR_PROVENANCE_OCT23.md). Organizer announcement October22 confirms no free Cursor credits are offered and Cursor is optional; no paid upgrade purchased.
-- **Live end-to-end acceptance has not passed.** Nightshift's official M1 build failed macOS execution assessment and remains unlaunched. No real model response, token billing or model latency measured. This build is not submission-ready.
+- **Live end-to-end acceptance has not passed.** Official Nightshift M1-M4 0.92.1 is installed and running. Authenticated Runtime discovery passed; the local Qwen2.5 1.5B model is downloading. No successful model response, token billing or model latency measured. This build is not submission-ready.
 
 ## Run
 
@@ -77,6 +77,6 @@ Markovian drives retrieval and assessment callbacks, with explicit completed-sta
 
 ## Remaining before submission
 
-Resolve Nightshift distribution/access and run a real model feature; record actual provider/model/usage/cost; execute live A01–A06, including changed evidence from the real governed source; record1–4minute video and finalize the8-slide draft deck from verified results; review final entry and submit. No public deployment has been made.
+Finish the local Nightshift model download and run a real model feature; record actual provider/model/usage/cost where reported; execute live A01–A06, including changed evidence from the real governed source; revise the1–4minute video and8-slide draft deck from verified results; review final entry and submit. No public deployment has been made.
 
-Submission preparation October23: HackOS draft saved with description/repository link, a3:01 narrated screenshot walkthrough and eight-slide draft deck. Uploaded media links persist and play/download correctly. Draft is not submitted. Repository remains private; judge access and Nightshift/live proof remain open. See [current status](docs/BUILD_STATUS_OCT23.md) and [media receipt](docs/evidence/submission-media-oct23.json).
+Submission preparation October23: HackOS draft saved with description/repository link, a3:01 narrated screenshot walkthrough and eight-slide draft deck. Uploaded media links persist and play/download correctly. Draft is not submitted. Repository is public with anonymous access verified; Nightshift inference and live proof remain open. See [current status](docs/BUILD_STATUS_OCT23.md) and [media receipt](docs/evidence/submission-media-oct23.json).

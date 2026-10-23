@@ -47,13 +47,14 @@
     },
     "deckDownloadMatchesLocalSha256": true,
     "savedReceipt": "work/submission-draft-saved-oct23.txt",
-    "screenshot": "work/submission-draft-uploaded-oct23.png"
+    "screenshot": "work/submission-draft-uploaded-oct23.png",
+    "repositoryPublic": true,
+    "repositoryAnonymousAccessVerified": true
   },
   "remaining": [
-    "Nightshift explicit app-only exception decision or signed build",
-    "genuine Runtime/model request and live acceptance",
-    "final demo/deck revision against live result",
-    "judge access to private repository",
-    "review required declarations and final submission receipt"
+    "Finish local model download and real Runtime inference",
+    "genuine app live acceptance and governed-source update evidence",
+    "revise final demo/deck/description against live result",
+    "review final entry and verify submission receipt"
   ]
 }

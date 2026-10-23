@@ -11,7 +11,7 @@
       "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
       "license": "Apache-2.0",
       "execution": "Genuine executor drives retrieval and assessment callbacks in preview;20/20 evaluation runs completed",
-      "Nightshift": "Adapter implemented; authenticated route and inference not verified; official M1 executable not launched after rejected macOS assessment"
+      "Nightshift": "Official M1-M4 0.92.1 installed and launched October23. Loopback-only Runtime, unauthorized discovery401, authenticated discovery200 with14routes. Qwen2.5-1.5B local model downloading; no successful inference yet, no cloud keys or paid calls."
     },
     "Zetaris": {
       "role": "Bounded source retrieval through local account UI proxy",
@@ -79,5 +79,11 @@
     "deckDownload": "PASS exact SHA256 matches local export"
   },
   "submissionStatus": "DRAFT saved in HackOS, not submitted",
-  "submitted": false
+  "submitted": false,
+  "repository": {
+    "url": "https://github.com/nikolas-sapa/open-agent-order-evidence-2026",
+    "visibility": "public",
+    "defaultBranch": "build/order-evidence",
+    "anonymousAccessVerified": true
+  }
 }

@@ -33,6 +33,12 @@ Zetaris existing admin login server-side only, POST /api/auth/login, obtain actu
 
 October23 source contract verification: the shipped UI and a real scoped SELECT1 confirm POST `/api/proxy/sql-editor/sqls/run-query`, JSON `{sql,limit}`, immediate `{headers,data,total,timeUsed}`. This supersedes the earlier sql/start transport assumption. Source setup uses plain CREATE for the fixed order_evidence container and records view, never OR REPLACE or DROP. Acceptance:20/20 real retrieved payloads deep-equal the fixed fixtures, including immutable record versions; an existing-container conflict results in0 subsequent view writes. No source updates or automatic overwrite added by this setup task.
 
+## October23 evaluation artifact scope
+
+Verification before implementation: regenerated preview report retains20/20 completed Markovian runs,20/20 exact classifications and20/20 reference-coverage checks. It contains0 assertions about unrelated live/provider/Cursor execution, and explicitly lists all4 excluded evidence categories. Source must not import evaluator labels into product execution.
+
+Implementation: replace the evaluator's stale hardcoded global statuses with an explicit notEvaluatedByThisRun list, preserve per-case results and update the console summary at its only executable call site. Non-goals: no product behavior, model integration, classification policy or acceptance thresholds changed by this repair.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.

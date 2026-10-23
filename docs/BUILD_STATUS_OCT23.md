@@ -26,3 +26,7 @@ A fresh clone of f59b5ac passes27/27 native tests and20/20 preview evaluations w
 [Official October22 Build update](evidence/organizer-build-update-oct22.md) closes the Cursor-credit inquiry: no credits offered, Cursor optional. The separate Nightshift Power requirement remains confirmed by sponsor support; core Markovian tests do not replace it.
 
 Draft media persisted after reload. Uploaded video plays at1920x1080,3:01, with no player error; uploaded deck downloads with the same SHA256 as the validated local export. No final Submit click. [Media evidence](evidence/submission-media-oct23.json).
+
+## Publication and Runtime setup follow-up
+
+User continuation after the two named approval requests was applied to public GitHub access and this official Nightshift app only. Repository is now PUBLIC; unauthenticated HTTP200 and Git access verified, full history secret scan5commits/0findings. Global Gatekeeper unchanged. The official installer installed Nightshift M1-M4 0.92.1 and the app launched; no additional System Settings exception was needed. Runtime binds127.0.0.1/[::1]:8088, unauthenticated models request401, real authenticated discovery200 with14routes. Runtime token and ignored app.env remain600. Qwen2.5 1.5B is downloading for local-only inference; no cloud keys configured, no successful model inference yet. Earlier private-repository/unlaunched statuses above are historical and superseded by this follow-up.
