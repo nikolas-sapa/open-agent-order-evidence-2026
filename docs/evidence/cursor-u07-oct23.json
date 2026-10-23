@@ -1,0 +1,48 @@
+{
+  "tool": "Cursor desktop",
+  "version": "3.27.6",
+  "taskTitle": "Cursor access implementation",
+  "observedModelLabel": "Cursor Grok 4.6 Medium",
+  "upstreamModelId": null,
+  "authorship": "Cursor agent, desktop operated by Codex on participant behalf",
+  "manualParticipantCoding": false,
+  "file": "test/cursor-u07.test.mjs",
+  "lines": 107,
+  "sha256": "10d1b5c8ad8fc00c129f9c7974361adba3f3cc5b175bcf97aaba05e009815c31",
+  "agentChecks": [
+    {
+      "kind": "dedicated",
+      "passed": 1,
+      "failed": 0,
+      "exitCode": 0,
+      "startedAt": "2026-10-23T04:44:58Z",
+      "endedAt": "2026-10-23T04:44:59Z"
+    },
+    {
+      "kind": "then-current full suite",
+      "passed": 25,
+      "failed": 0,
+      "exitCode": 0,
+      "startedAt": "2026-10-23T04:45:14Z",
+      "endedAt": "2026-10-23T04:45:15Z"
+    }
+  ],
+  "independentChecks": {
+    "dedicated": {
+      "passed": 1,
+      "failed": 0,
+      "exitCode": 0,
+      "logSha256": "0879cf6cf8f2a3fce903213f7300f42456588f681e48f2217663226a7b2cdfd6"
+    },
+    "full": {
+      "passed": 27,
+      "failed": 0,
+      "exitCode": 0,
+      "logSha256": "a07c0b327580065495785e5ba6b1a2bd988d0a2c8cedb7dc103bd819a721ff99"
+    }
+  },
+  "nativeTranscriptSha256": "4d7f5b5ff531d3e7b44554801d5abe72ce1a506865385a85593e642bd2c63f0a",
+  "paidUpgradePurchased": false,
+  "sponsorCredits": "unclaimed",
+  "scope": "Explicit preview regression, not live sponsor acceptance"
+}

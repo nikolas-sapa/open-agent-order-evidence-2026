@@ -1,6 +1,6 @@
-# Cursor U07 task, ready for genuine Cursor execution
+# Cursor U07 task, completed October23
 
-Status: NOT RUN. This prompt was prepared in Codex. No dedicated Cursor test has been authored.
+Status: COMPLETED through the installed Cursor3.27.6 desktop agent. Cursor authored `test/cursor-u07.test.mjs`, passed its single test1/1 and then-current suite25/25. Codex independently verified1/1 and current27/27 after source-setup tests landed. Prompt below was prepared in Codex before execution; actual contribution and limits are recorded in [provenance](CURSOR_PROVENANCE_OCT23.md).
 
 Open this repository in the existing Cursor desktop account. Use available free/included usage only. Do not upgrade, publish, deploy or read private configuration. Record the actual tool/model/version, UTC start/end, diff and test result. Keep Cursor and Codex contributions distinct.
 
