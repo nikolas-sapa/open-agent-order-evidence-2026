@@ -28,7 +28,12 @@ function usageCounts(usage) {
 }
 function callEvidence(item) {
   return { model: typeof item.model === 'string' ? item.model : null,
-    usage: usageCounts(item.usage), cost: Number.isFinite(item.cost) ? item.cost : null };
+    usage: usageCounts(item.usage), cost: Number.isFinite(item.cost) ? item.cost : null,
+    costBasis: typeof item.costBasis === 'string' ? item.costBasis : null,
+    receiptId: typeof item.receiptId === 'string' ? item.receiptId : null,
+    requestedRoute: typeof item.requestedRoute === 'string' ? item.requestedRoute : null,
+    underlyingModel: typeof item.underlyingModel === 'string' ? item.underlyingModel : null,
+    privacyPath: item.privacyPath === 'local-only' ? 'local-only' : null };
 }
 function providerEvidence(provider) {
   return { kind: provider.kind, ...callEvidence(provider), attempts: provider.attempts,

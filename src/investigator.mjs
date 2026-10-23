@@ -22,11 +22,12 @@ export async function investigate({orderId,mode='live',store,retrieve,provider,i
       const calls=[];let validation;
       for(let attempt=0;attempt<2;attempt++){
         const response=await provider.select(assessment,evidence,attempt===0?undefined:validation.errors.join(' '));
-        calls.push({model:typeof response?.model==='string'?response.model:null,usage:response?.usage??null,cost:response?.cost??null});
+        calls.push({model:typeof response?.model==='string'?response.model:null,usage:response?.usage??null,cost:response?.cost??null,
+          requestedRoute:response?.requestedRoute??null,underlyingModel:response?.underlyingModel??null,receiptId:response?.receiptId??null,privacyPath:response?.privacyPath??null,costBasis:response?.costBasis??null});
         validation=validateCandidate(response?.candidate,assessment);
         if(validation.valid){assessment.draft.optionId=response.candidate.optionId;break;}
       }
-      providerMetadata={kind:'nightshift',model:calls.at(-1)?.model??null,usage:calls.at(-1)?.usage??null,cost:calls.at(-1)?.cost??null,attempts:calls.length,calls,validated:validation.valid};
+      providerMetadata={kind:'nightshift',model:calls.at(-1)?.model??null,usage:calls.at(-1)?.usage??null,cost:calls.at(-1)?.cost??null,costBasis:calls.at(-1)?.costBasis??null,attempts:calls.length,calls,validated:validation.valid};
       if(!validation.valid){
         const evidenceIds=evidence.records.map(record=>record.id);
         assessment={status:'undetermined',causes:['unverified model selection'],claims:[{text:'The model did not select an evidence-supported assessment after one correction. Human evidence review required.',evidenceIds}],uncertainty:['Review the cited source evidence; two model selections failed deterministic evidence validation.'],options:[{id:'request-evidence',label:'Review source evidence',evidenceIds}],draft:{optionId:'request-evidence',text:'Model selection could not be verified. Review source evidence before approving a draft.',evidenceIds}};

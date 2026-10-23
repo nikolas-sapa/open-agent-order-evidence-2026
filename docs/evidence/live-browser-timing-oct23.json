@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-23T10:37:28.215Z",
+  "clock": "performance.now()",
+  "observedRenderedUpperBoundMs": 31873.136082999874,
+  "status": "At risk",
+  "mode": "Live integrations",
+  "note": "Upper bound includes time between starting the click and the next full result observation; not an exact render timestamp."
+}

@@ -3,15 +3,15 @@
   "event": "Open Agent Hackathon 2026",
   "track": "The Agent That Can Explain Why",
   "buildStartedOn": "2026-10-22",
-  "status": "working-preview-zetaris-source-verified-nightshift-incomplete",
+  "status": "representative-live-working-batch-validation-incomplete",
   "data": "Synthetic only; fixed business assessment dates, actual execution timestamps stored separately",
   "sponsors": {
     "Meterless": {
       "engine": "Markovian reference",
       "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
       "license": "Apache-2.0",
-      "execution": "Genuine executor drives retrieval and assessment callbacks in preview;20/20 evaluation runs completed",
-      "Nightshift": "Official M1-M4 0.92.1 installed and launched October23. Loopback-only Runtime, unauthorized discovery401, authenticated discovery200 with14routes. Qwen2.5-1.5B local model downloading; no successful inference yet, no cloud keys or paid calls."
+      "execution": "Genuine pinned executor drives retrieval/assessment in preview and real live workflow; representative live status completed with actual source/model receipts.",
+      "Nightshift": "Official M1-M4 0.92.1, discovered concrete WebLLM Qwen2.5-1.5B pin through authenticated loopback Runtime. Representative live selection validated; model reports local-only and actual_usd0. First broader batch:2 validated cases,2 rejected selections,1 provider failure; no cloud keys or paid upgrade."
     },
     "Zetaris": {
       "role": "Bounded source retrieval through local account UI proxy",
@@ -40,7 +40,7 @@
     }
   ],
   "developmentModel": "Exact session model identifier not independently recorded",
-  "runtimeModel": null,
+  "runtimeModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
   "providerTokens": null,
   "providerCost": null,
   "frameworks": [],
@@ -52,13 +52,13 @@
     "Geist font files with SIL OFL"
   ],
   "verification": {
-    "nativeTestsPassed": 27,
+    "nativeTestsPassed": 38,
     "previewClassifications": "20/20",
     "realMarkovianPreviewRuns": "20/20",
-    "liveA01A02A03": "NOT RUN",
+    "liveA01A02A03": "INCOMPLETE: first batch5attempted,2exact/validated,2explicitunverified,1providerfailure; source update not yet run",
     "processRestartPersistence": "2 process restarts passed in native test",
-    "A05": "BLOCKED, no genuine Zetaris plus Nightshift application investigation recorded",
-    "A06": "NOT RUN",
+    "A05": "PASS representative real Zetaris retrieval and completed Markovian execution with validated Nightshift call; docs/evidence/nightshift-first-live-oct23.json",
+    "A06": "Browser grounded result observed within31.9seconds; reported usage769tokens and Runtimeactual_usd0. Independent billing/electricity not verified.",
     "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked",
     "realZetarisSource": "20/20 payloads verified; app source check order003 retrieves3records",
     "cursorU07": "1/1 dedicated test; Cursor then-current suite25/25; independent current suite27/27",

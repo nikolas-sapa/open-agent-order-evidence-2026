@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-10-23T10:37:55.438Z",
+  "hardware": {
+    "cpu": "Apple M3",
+    "architecture": "arm64",
+    "ramBytes": 17179869184,
+    "os": "macOS27.0.1"
+  },
+  "node": "v24.19.0",
+  "source": {
+    "view": "order_evidence.records",
+    "data": "20 synthetic cases",
+    "transport": "local Zetaris UI proxy"
+  },
+  "inference": {
+    "runtime": "Official Nightshift M1-M4 0.92.1",
+    "endpoint": "http://127.0.0.1:8088/v1",
+    "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+    "temperature": 0,
+    "maxTokens": 256,
+    "stream": false,
+    "cloudKeysConfigured": 0
+  },
+  "engineCommit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
+  "costBasis": "Nightshift-reported actual_usd, not independently verified billing; hardware electricity not measured"
+}
