@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-10-23T17:48:04.818Z",
+  "purpose": "Stateless Nightshift adapter regression after shared-scope stale-answer failures",
+  "transport": "Actual authenticated local Runtime; adapter used without request rewriting",
+  "cases": [
+    {
+      "orderId": "SYN-ORD-02",
+      "at": "2026-10-23T17:46:16.834Z",
+      "httpStatus": 200,
+      "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+      "content": "{\"status\":\"on-track\",\"causes\":[],\"optionId\":\"monitor\"}",
+      "usage": {
+        "prompt_tokens": 607,
+        "completion_tokens": 15,
+        "total_tokens": 622
+      },
+      "finishReason": "stop",
+      "error": null
+    },
+    {
+      "orderId": "SYN-ORD-04",
+      "at": "2026-10-23T17:46:38.199Z",
+      "httpStatus": 200,
+      "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+      "content": "```json\n{\n  \"status\": \"undetermined\",\n  \"causes\": [\"missing evidence\"],\n  \"optionId\": \"request-evidence\"\n}\n```",
+      "usage": {
+        "prompt_tokens": 455,
+        "completion_tokens": 33,
+        "total_tokens": 488
+      },
+      "finishReason": "stop",
+      "error": null
+    }
+  ],
+  "nativeTestsPassed": 38,
+  "limitation": "Two isolated fixture-backed model selections, not the full Zetaris end-to-end evaluation"
+}

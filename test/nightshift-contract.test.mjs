@@ -11,9 +11,12 @@ const candidate = { status: assessment.status, causes: assessment.causes, option
 
 test('Nightshift discovered pin uses1 user message,256-token cap and preserves actual receipt/cost0', async t => {
   const posts = [];
+  const scopes = [];
   t.mock.method(globalThis, 'fetch', async (url, options) => {
     assert.ok(url.startsWith('http://127.0.0.1:8088/v1/'));
     assert.equal(options.redirect, 'error');
+    assert.match(options.headers['meterless-scope'], /^order-evidence:[a-f0-9-]{36}$/);
+    scopes.push(options.headers['meterless-scope']);
     if (url.endsWith('/models')) return Response.json({ data: [{ id: 'meterless/local' }, { id: model }] });
     assert.equal(url, 'http://127.0.0.1:8088/v1/chat/completions');
     assert.equal(options.headers['meterless-tier-split'], 'off');
@@ -29,7 +32,8 @@ test('Nightshift discovered pin uses1 user message,256-token cap and preserves a
       choices: [{ message: { content: '```json\n' + JSON.stringify(candidate) + '\n```' } }],
       meterless: { receipt_id: 'rcpt_test', routed_model: model, privacy: { path: 'local-only' }, cost: { actual_usd: 0 } } });
   });
-  const result = await new Nightshift({ token: 'test-only-token', model }).select(assessment, data);
+  const provider = new Nightshift({ token: 'test-only-token', model });
+  const result = await provider.select(assessment, data);
   assert.equal(posts.length, 1);
   assert.deepEqual(result.candidate, candidate);
   assert.equal(validateCandidate(result.candidate, assessment).valid, true);
@@ -38,6 +42,10 @@ test('Nightshift discovered pin uses1 user message,256-token cap and preserves a
   assert.equal(result.underlyingModel, model);
   assert.equal(result.privacyPath, 'local-only');
   assert.match(result.costBasis, /not independently verified billing/);
+  await provider.select(assessment, data, 'Correct the previous selection.');
+  assert.equal(posts.length, 2);
+  assert.equal(scopes.length, 4);
+  assert.equal(new Set(scopes).size, 4, 'Discovery, selection and correction must never share HMEM scope');
 });
 
 test('Nightshift rejects prose extraction and unsupported keys; absent cost stays null across3 responses', async t => {

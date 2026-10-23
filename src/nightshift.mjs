@@ -1,4 +1,5 @@
 import { AppError, readJsonResponse } from './errors.mjs';
+import { randomUUID } from 'node:crypto';
 
 const BASE = 'http://127.0.0.1:8088/v1';
 export class Nightshift {
@@ -9,7 +10,8 @@ export class Nightshift {
   headers() {
     if (!this.token || this.token === 'rt-local') throw new AppError('UNCONFIGURED', 'Nightshift needs its Console access token.');
     return { Authorization: `Bearer ${this.token}`, 'Content-Type': 'application/json',
-      'meterless-app': 'order-evidence', 'meterless-scope': 'user', 'meterless-tier-split': 'off' };
+      // Scope partitions Nightshift's learned answers. Never carry prior orders/revisions into a stateless selection.
+      'meterless-app': 'order-evidence', 'meterless-scope': `order-evidence:${randomUUID()}`, 'meterless-tier-split': 'off' };
   }
   async request(path, options = {}, timeout = 8000) {
     try {
