@@ -1,5 +1,7 @@
 # Order Evidence build status
 
+Historical snapshot. Superseded by [October23 status](BUILD_STATUS_OCT23.md):27/27 tests, genuine Cursor U07 contribution and20/20 real Zetaris payloads now verified. Nightshift and full live acceptance remain open.
+
 Verified October22,2026,19:09UTC. First working build is in the private repository, branch `build/order-evidence`. Submission has not been completed.
 
 ## Passed

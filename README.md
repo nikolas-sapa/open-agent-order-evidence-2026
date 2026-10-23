@@ -6,11 +6,12 @@ Working first build: inspect a promise, inventory and supplier evidence; investi
 
 ## Current verification
 
--24/24 native tests passed on Node24.19.0. Tests include20exact classifications,5uncertainty cases,10supplier updates, idempotency, two process restarts, HTTP revision/approval safety and source-scope rejection.
+- 27/27 native tests passed on Node24.19.0. Tests include20exact classifications,5uncertainty cases,10supplier updates, idempotency, two process restarts, HTTP revision/approval safety, source-scope rejection and source setup checks.
 - Separate preview evaluation:20/20 genuine Markovian runs completed;20/20 classifications match sealed evaluator labels;20/20 outputs reference existing immutable evidence records. Reference existence is not an independent semantic citation audit.
-- Real browser check: investigate order003, inspect citation, record an automated preview draft approval, apply U01, observe on-track revision2 and invalidated historical approval. Keyboard traversal works; no horizontal overflow at1265px. Mobile screenshot verification remains outstanding.
-- **Live end-to-end acceptance has not passed.** Zetaris local images are being restored; the order-view response mapping is unverified. Nightshift's official M1 build failed macOS execution assessment, so it was not launched. No real model response, token billing or live latency measured. No fabricated sponsor success.
-- Cursor is installed, but no genuine development contribution has been made. Sponsor credit claim remains unresolved. This build is not submission-ready.
+- Real browser check: investigate order003, inspect citation, record an automated preview draft approval, apply U01, observe on-track revision2 and invalidated historical approval. Keyboard traversal works; desktop1440x900 and mobile390x844 have0 horizontal overflow. Mobile citation opens supplier v2.
+- Real Zetaris source setup and retrieval passed October23:20/20 registered payloads deep-equal the fixed synthetic cases. An actual duplicate-container CREATE returned HTTP400. See [source receipts](docs/evidence/zetaris-source-oct23.json).
+- Genuine Cursor desktop agent authored the U07 HTTP regression using included access. Dedicated test1/1, Cursor's then-current suite25/25, independently checked current suite27/27. Codex operated the desktop; no manual participant authorship claimed. See [provenance](docs/CURSOR_PROVENANCE_OCT23.md). Sponsor credits remain unclaimed; no paid upgrade purchased.
+- **Live end-to-end acceptance has not passed.** Nightshift's official M1 build failed macOS execution assessment and remains unlaunched. No real model response, token billing or model latency measured. This build is not submission-ready.
 
 ## Run
 
@@ -46,7 +47,9 @@ Copy `.env.example` to private `.env`, never commit it. Configure either the exi
 
 Nightshift requires its **Console Runtime token**, separate from the NVIDIA provider credential. The app discovers actual `meterless/*` routes, then requests a bounded JSON selection. Unsupported selections get at most one correction. Provider usage is retained only if actually reported; price and underlying concrete model remain unknown until independently verified.
 
-Endpoints use loopback only: Zetaris UI port defaults to3300, Nightshift8088. Set the vendor's `UI_PORT`, `GUI_URL` and `ALLOWED_ORIGINS` consistently; the app reads `UI_PORT` from the private vendor file, with optional `ZETARIS_UI_PORT` override. Verify the selected listener belongs to Zetaris before enabling credentials. No arbitrary network destinations, SQL or file paths accepted through HTTP. Source view is `order_evidence.records`, holding one `order_id,payload` row per synthetic case. Source registration and the UI-proxy response parser still require a successful live check before this adapter can be called verified.
+Endpoints use loopback only: Zetaris UI port defaults to3300, Nightshift8088. Set the vendor's `UI_PORT`, `GUI_URL` and `ALLOWED_ORIGINS` consistently; the app reads `UI_PORT` from the private vendor file, with optional `ZETARIS_UI_PORT` override. Verify the selected listener belongs to Zetaris before enabling credentials. No arbitrary network destinations, SQL or file paths accepted through HTTP. Source view is `order_evidence.records`, holding one `order_id,payload` row per synthetic case. Current UI proxy uses POST `/api/proxy/sql-editor/sqls/run-query`, body `{sql,limit}`, response `{headers,data,total,timeUsed}`. Real source registration and parsing passed20/20 October23.
+
+On a fresh, configured Zetaris installation, `npm run seed:zetaris` creates the fixed synthetic container/view and verifies all20 returned payloads. Plain CREATE only: an existing container stops setup before view writes. This is intentionally not an overwrite or repair command. The local instance is already seeded; do not rerun setup there. It does not implement live source updates or prove a Nightshift investigation.
 
 ## Architecture
 
@@ -70,8 +73,8 @@ Markovian drives retrieval and assessment callbacks, with explicit completed-sta
 - Unmodified Meterless Markovian reference, commit`0aa7417ba5c826396d91e891328be78c45e6fbf6`, nine source files, Apache2.0, predates the build window. License and source hashes in `vendor/meterless/`.
 - UI adapts static Ledger layout structures from the participant's existing design-demos, disclosed in `docs/UI_PROVENANCE.md`. No pre-event app/business logic imported from that design reference.
 - Local Geist fonts from Google Fonts, SIL Open Font License files under `public/fonts/`.
-- Node built-ins only, no runtime npm dependencies. New app code authored during the eligible October22window using Codex. Cursor contribution and runtime model use remain outstanding, see `metadata.json`.
+- Node built-ins only, no runtime npm dependencies. New app code authored during the eligible build window using Codex, with a bounded genuine Cursor-agent regression-test contribution October23. Runtime model use remains outstanding, see `metadata.json`.
 
 ## Remaining before submission
 
-Restore and verify real Zetaris source retrieval; resolve Nightshift distribution/access and run a real model feature; record actual provider/model/usage/cost; complete genuine Cursor regression-test contribution; execute live A01–A06; record1–4minute video and produce8-slide deck from verified results; review final entry and submit. No public deployment has been made.
+Resolve Nightshift distribution/access and run a real model feature; record actual provider/model/usage/cost; execute live A01–A06, including changed evidence from the real governed source; record1–4minute video and finalize the8-slide draft deck from verified results; review final entry and submit. No public deployment has been made.

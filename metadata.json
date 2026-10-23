@@ -3,7 +3,7 @@
   "event": "Open Agent Hackathon 2026",
   "track": "The Agent That Can Explain Why",
   "buildStartedOn": "2026-10-22",
-  "status": "working-preview-live-integration-incomplete",
+  "status": "working-preview-zetaris-source-verified-nightshift-incomplete",
   "data": "Synthetic only; fixed business assessment dates, actual execution timestamps stored separately",
   "sponsors": {
     "Meterless": {
@@ -15,11 +15,14 @@
     },
     "Zetaris": {
       "role": "Bounded source retrieval through local account UI proxy",
-      "status": "Adapter implemented, order-source mapping not live verified; local platform images restoring",
-      "earlierGenericSetup": "9/9 vendor checks passed October19, separate from application integration"
+      "status": "Real local registration and scoped retrieval verified20/20 on October23; payloads deep-equal fixed synthetic cases; actual duplicate-container control HTTP400",
+      "earlierGenericSetup": "9/9 vendor checks passed October19, separate from application integration",
+      "transport": "/api/proxy/sql-editor/sqls/run-query",
+      "evidence": "docs/evidence/zetaris-source-oct23.json"
     },
     "Cursor": {
-      "status": "Installed, development contribution NOT PERFORMED, sponsor credits unclaimed"
+      "status": "Genuine desktop-agent U07 HTTP regression authored and executed October23 using included access; sponsor credits unclaimed, no paid upgrade",
+      "evidence": "docs/CURSOR_PROVENANCE_OCT23.md"
     },
     "NVIDIA": {
       "status": "No model inference performed; no NVIDIA award eligibility claimed"
@@ -29,6 +32,11 @@
     {
       "name": "Codex",
       "contribution": "Core, integration, UI, tests, review and documentation"
+    },
+    {
+      "name": "Cursor desktop3.27.6",
+      "observedModelLabel": "Cursor Grok4.6 Medium",
+      "contribution": "Authored test/cursor-u07.test.mjs through installed desktop agent operated by Codex; no manual participant authorship claimed"
     }
   ],
   "developmentModel": "Exact session model identifier not independently recorded",
@@ -44,14 +52,16 @@
     "Geist font files with SIL OFL"
   ],
   "verification": {
-    "nativeTestsPassed": 24,
+    "nativeTestsPassed": 27,
     "previewClassifications": "20/20",
     "realMarkovianPreviewRuns": "20/20",
     "liveA01A02A03": "NOT RUN",
     "processRestartPersistence": "2 process restarts passed in native test",
     "A05": "BLOCKED, no genuine Zetaris plus Nightshift application investigation recorded",
     "A06": "NOT RUN",
-    "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked"
+    "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked",
+    "realZetarisSource": "20/20 payloads verified; app source check order003 retrieves3records",
+    "cursorU07": "1/1 dedicated test; Cursor then-current suite25/25; independent current suite27/27"
   },
   "submissionCreated": false,
   "publicDeployment": false

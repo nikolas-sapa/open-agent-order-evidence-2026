@@ -1,6 +1,6 @@
 # Submission material, first-build working draft
 
-Not ready for submission. All demonstrations and counts below describe the verified offline preview unless explicitly stated. Live Zetaris + Nightshift evidence, genuine Cursor contribution, video and final slide export remain open.
+Not ready for submission. Demonstrations describe the verified offline preview unless explicitly stated. Real Zetaris retrieval passed20/20 and genuine Cursor U07 development completed October23. Nightshift inference, full live acceptance, video and final deck remain open.
 
 ## Eight-slide content
 
@@ -22,7 +22,7 @@ Node24.19, built-in HTTP/fetch/test/fs/crypto, ES modules and the experimental T
 
 ### 5. Zetaris role
 
-The intended live data boundary is a bounded query of a governed synthetic evidence view through the existing local Zetaris account proxy. Credentials stay server-side. A generic vendor platform check passed9/9 October19; current images are restoring. Application source registration and response mapping remain unverified. No application-level Zetaris execution is claimed by this draft.
+The live data boundary is a bounded query of order_evidence.records through the existing local Zetaris account proxy. Credentials stay server-side. October23 registration and retrieval passed20/20 exact synthetic payloads; an actual duplicate-container control returned HTTP400. These are source-only results. Full source plus Nightshift inference remains unverified.
 
 ### 6. Meterless and unique use
 
@@ -30,11 +30,11 @@ Actual Markovian callbacks drive retrieval and assessment, rather than logging a
 
 ### 7. Actual product and evidence
 
-Use `preview-oct22.png`, captured from the running app. Show order003 at risk, cite supplier version1, approve the draft in the synthetic demonstration, apply U01 and inspect revision2 on track. The old approval is historical/invalidated. Automated checks:24/24 pass;20/20 exact preview classifications;5/5 uncertainty cases;10/10 update checks; two process restarts preserve state. Provider HTTP tests use explicit fakes and are not live sponsor proof.
+Use `preview-oct22.png`, captured from the running app. Show order003 at risk, cite supplier version1, approve the draft in the synthetic demonstration, apply U01 and inspect revision2 on track. The old approval is historical/invalidated. Automated checks:27/27 pass;20/20 exact preview classifications;5/5 uncertainty cases;10/10 update checks; two process restarts preserve state. Provider HTTP tests use explicit fakes and are not live sponsor proof.
 
 ### 8. Limitations and next improvements
 
-First release is synthetic, single-order and local. Live source/model gates, actual billing/latency, Cursor development evidence remain incomplete. After those gates close, prioritize measured semantic citation audit, realistic source onboarding and operational user feedback. No production, customer adoption or financial impact claim.
+First release is synthetic, single-order and local. Full live model/update acceptance and actual billing/model latency remain incomplete. Cursor desktop-agent development is complete: a107line U07 HTTP test, single1/1 and then-current full suite25/25, independently current27/27, no paid upgrade. After those gates close, prioritize measured semantic citation audit, realistic source onboarding and operational user feedback. No production, customer adoption or financial impact claim.
 
 ##180-second preview walkthrough script
 
@@ -48,8 +48,8 @@ First release is synthetic, single-order and local. Live source/model gates, act
 
 120–145s: Open execution/source receipts. Explain that the actual Markovian executor ran the two callbacks. Say clearly that preview uses local synthetic evidence and deterministic policy, with no model billing.
 
-145–165s: Show evaluation/results/preview.json and the native test summary. Explain20/20 classification and reference-coverage results,24checks and separate two-process restart test. Do not call reference existence a full semantic citation audit.
+145–165s: Show evaluation/results/preview.json and the native test summary. Explain20/20 classification and reference-coverage results,27checks and separate two-process restart test. Do not call reference existence a full semantic citation audit.
 
-165–180s: State current limitations: live Zetaris mapping, Nightshift access, actual Cursor contribution and live evaluation still required. End with the working review-and-revision workflow, not a claim of submission readiness.
+165–180s: State current limitations: Nightshift access, full live evaluation, model accounting and final recording still required. Real Zetaris retrieval and genuine Cursor-agent contribution are complete. End with the working review-and-revision workflow, not a claim of submission readiness.
 
 This is a script, not a recorded demo. Final video must be re-recorded against verified live behavior before the final entry claims that behavior.

@@ -37,8 +37,9 @@ test('Zetaris login and query use the configured loopback port over real HTTP', 
       } else {
         assert.equal(request.headers.authorization, 'Bearer test-only-session');
         assert.equal(request.headers['x-org-id'], '7');
-        assert.equal(input.select, 'SELECT 1 AS one');
-        response.end(JSON.stringify({ rows: [{ one: 1 }] }));
+        assert.equal(input.sql, 'SELECT 1 AS one');
+        assert.equal(input.limit, 1);
+        response.end(JSON.stringify({ headers: ['one'], data: [[1]], total: 1, timeUsed: 0 }));
       }
     } catch (error) {
       handlerError = error;
@@ -52,5 +53,5 @@ test('Zetaris login and query use the configured loopback port over real HTTP', 
   const status = await source.status();
   assert.ifError(handlerError);
   assert.equal(status.state, 'online');
-  assert.deepEqual(paths, ['/api/auth/login', '/api/proxy/query/sql/start']);
+  assert.deepEqual(paths, ['/api/auth/login', '/api/proxy/sql-editor/sqls/run-query']);
 });

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-23T04:56:34.508Z",
+  "zetaris": {
+    "state": "online",
+    "message": "Query service reachable. Order-source retrieval still needs verification."
+  },
+  "nightshift": {
+    "state": "unconfigured",
+    "message": "Nightshift needs its Console access token."
+  },
+  "sourceRetrieval": {
+    "state": "PASS",
+    "records": 3,
+    "receipts": [
+      {
+        "id": "8d3ed856-a855-4c3f-9e0d-19bfd03cf786",
+        "source": "zetaris",
+        "method": "/api/proxy/sql-editor/sqls/run-query",
+        "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-03'",
+        "at": "2026-10-23T04:56:51.660Z",
+        "scope": "SYN-ORD-03",
+        "returnedIds": [
+          "synthetic-order::SYN-ORD-03::v1",
+          "synthetic-stock::SYN-STK-03::v1",
+          "synthetic-supplier::SYN-SUP-03::v1"
+        ],
+        "rowCount": 1
+      }
+    ]
+  },
+  "inference": "NOT RUN"
+}

@@ -27,7 +27,8 @@ export class Zetaris {
       return await readJsonResponse(response, 'Zetaris');
     } catch (error) {
       if (error instanceof AppError) throw error;
-      throw new AppError(error.name === 'TimeoutError' ? 'TIMEOUT' : 'UNAVAILABLE', 'Zetaris is not reachable. Start its local instance.');
+      throw new AppError(error.name === 'TimeoutError' ? 'TIMEOUT' : 'UNAVAILABLE',
+        error.name === 'TimeoutError' ? 'Zetaris request timed out.' : 'Zetaris is not reachable. Start its local instance.');
     }
   }
   async login() {
@@ -42,7 +43,7 @@ export class Zetaris {
   async query(sql, pageLimit = 100) {
     if (!this.session) await this.login();
     try {
-      return await this.request('/api/proxy/query/sql/start', { select: sql, pageLimit },
+      return await this.request('/api/proxy/sql-editor/sqls/run-query', { sql, limit: pageLimit },
         { Authorization: `Bearer ${this.session.token}`, 'X-Org-ID': this.session.orgId });
     } catch (error) { if (error.code === 'UNAUTHORIZED') this.session = null; throw error; }
   }
@@ -67,7 +68,7 @@ export class Zetaris {
     try { result = typeof raw === 'string' ? JSON.parse(raw) : raw; }
     catch { throw new AppError('SOURCE_INVALID', 'The order source has an unreadable evidence payload.'); }
     if (!result || result.orderId !== orderId || !Array.isArray(result.records) || result.records.length > 100) throw new AppError('SOURCE_INVALID', 'The order evidence does not match its bounded source contract.');
-    return { ...result, retrievalReceipts: [{ id: queryId, source: 'zetaris', method: '/api/proxy/query/sql/start',
+    return { ...result, retrievalReceipts: [{ id: queryId, source: 'zetaris', method: '/api/proxy/sql-editor/sqls/run-query',
       query: sql, at: new Date().toISOString(), scope: orderId, returnedIds: result.records.map(r => r.id), rowCount: 1 }] };
   }
 }
