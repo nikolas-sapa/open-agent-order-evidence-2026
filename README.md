@@ -31,6 +31,8 @@ npm run check:live
 
 `check:live` exits1 until both actual source retrieval and authenticated Nightshift route discovery work. It does not claim that discovery proves inference. Evaluation labels live under `evaluation/ground-truth.json`, never served to the investigator. Preview results are under `evaluation/results/preview.json`.
 
+After an on-device Nightshift model is ready, `node --experimental-transform-types --env-file=.env scripts/evaluate-live.mjs` runs the20 real source/model investigations in an isolated temporary store. It writes `evaluation/results/live.json` after each case, stops on a transport failure and preserves returned attempt usage. A pass requires20 real source/model/engine runs, at least18 exact classifications,20 citation checks and5 uncertainty requests. This runner does not update sources, approve drafts or verify billing.
+
 ## Demo workflow
 
 1. Choose Order003, Offline preview, Investigate. Status is at risk because confirmed arrival is later than the promise.

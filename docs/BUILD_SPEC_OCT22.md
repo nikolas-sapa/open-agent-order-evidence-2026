@@ -39,6 +39,10 @@ Verification before implementation: regenerated preview report retains20/20 comp
 
 Implementation: replace the evaluator's stale hardcoded global statuses with an explicit notEvaluatedByThisRun list, preserve per-case results and update the console summary at its only executable call site. Non-goals: no product behavior, model integration, classification policy or acceptance thresholds changed by this repair.
 
+## October23 live evaluation runner
+
+Live evaluation runner: before implementation, require20 real Zetaris retrievals and20 completed Markovian investigations with validated Nightshift selections; target at least18/20 exact status/cause sets,20/20 immutable citation checks. Each failed request is recorded as failed, never replaced with preview evidence. Capture actual per-call model/usage/cost as reported, leaving absent values unknown. Persist a partial report after each case so interruption cannot become an implicit pass. Use an isolated temporary store, never the review workspace's saved investigations. No provider keys, prompts, credentials or raw error bodies in the report. Implementation reuses the existing live investigator, source and model adapter, with evaluator labels used only after execution. Non-goals: no policy changes, new provider, cloud spend or source writes.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.
