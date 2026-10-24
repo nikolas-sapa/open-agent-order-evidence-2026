@@ -1,6 +1,6 @@
 # Order Evidence, October 24, 2026
 
-Working local build with genuine Zetaris, Nightshift and Meterless Markovian execution. The real U01 source-change and linked-revision demonstration passed. The full live evaluation failed. Final video/deck uploads are verified in the saved HackOS draft; final submission remains pending. Earlier dated status documents are historical snapshots.
+Submitted 1/1 in HackOS, verified after reload on October 24. The local build uses genuine Zetaris, Nightshift and Meterless Markovian execution. The real U01 source-change and linked-revision demonstration passed. The full live evaluation failed, and those limits remain disclosed in the submitted entry. Final video/deck uploads are verified. Earlier dated status documents are historical snapshots.
 
 ## Verified product behavior
 
@@ -37,12 +37,12 @@ The unchanged Apache 2.0 Markovian reference is pinned and attributed. Codex aut
 
 ## Submission state
 
-HackOS remains a saved draft, with 0/1 final submissions. The final [narrated screenshot walkthrough](https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22) and [eight-slide deck](https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx) persisted after save and reload. The October 23 preview upload receipt is historical.
+HackOS shows “The Agent That Can Explain Why Submitted,” the counter “Submitted 1/1,” and Save Changes instead of Submit after reload. Verification occurred October 24 between 09:49:38 and 09:50 UTC; the exact submission timestamp was not exposed. The final 1,929-character description persisted. See the [submission receipt](evidence/submission-receipt-oct24.json) and [confirmation screenshot](evidence/submitted-oct24.jpg). The final [narrated screenshot walkthrough](https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22) and [eight-slide deck](https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx) persisted after save and reload before submission. The October 23 preview upload receipt is historical.
 
 The eight-slide deck `order-evidence-final-oct23.pptx` uses October 24 facts despite the filename. Export size is 61,438 bytes, SHA256 `e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d`. Eight slides re-imported with zero integrity/layout findings; Geist fonts and the source image were preserved. Visual review covered slides 5 and 8.
 
 The final narrated screenshot walkthrough `order-evidence-live-oct24.mp4` shows actual live UI, U01 revision history and prior automated demonstration approval invalidation. It is not continuous screen recording. Local duration is 193.584333 seconds; size is 5,070,012 bytes; SHA256 is `018d203a31589f74958d7bf1d445463b32caada75deb350947acf999e90f0386`. Encoding is H.264 1920×1080 at 24 fps, AAC 48 kHz mono. All eight encoded scenes were visually reviewed and U01 was legible. Decode completed with zero errors. Audio checks were automated (mean -19.4 dB, peak -0.9 dB); human listening was not performed. [Media evidence](evidence/final-media-oct24.json) records local checks separately from remote verification.
 
-Remote video playback advanced to 27.17729 seconds, with duration 193.564 seconds, 1920×1080, readyState 4 and no player error; it was paused after verification. The deck download returned HTTP 200, 61,438 bytes and an exact SHA256 match to the local export. Both final uploads were still present after saving and reloading the draft.
+Remote video playback advanced to 27.17729 seconds, with duration 193.564 seconds, 1920×1080, readyState 4 and no player error; it was paused after verification. The deck download returned HTTP 200, 61,438 bytes and an exact SHA256 match to the local export. Both final uploads were still present after saving and reloading the entry before submission.
 
-`SUBMISSION_DESCRIPTION_DRAFT.txt` is local copy and does not itself update HackOS. Final submission has not been sent. No public deployment or customer-data use has occurred.
+`SUBMISSION_DESCRIPTION_DRAFT.txt` retains the final 1,929-character description that was saved before submission. Submitting did not change quality results or mark unfinished board tasks complete. No public deployment or customer-data use has occurred.

@@ -48,7 +48,8 @@
   },
   "scope": "Synthetic-only demo includes verified real U01 source update and linked live revision; full 20-case live matrix remains failed (17/20 distinct cases).",
   "uploadVerified": true,
-  "submitted": false,
+  "submitted": true,
+  "submissionReceipt": "submission-receipt-oct24.json",
   "uploadVerifiedAt": "2026-10-24T09:46:50.141Z",
   "savedDraftReloadVerified": true
 }

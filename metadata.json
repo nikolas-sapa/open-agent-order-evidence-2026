@@ -84,13 +84,14 @@
     "descriptionUpdatePending": false,
     "video": "https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22",
     "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
-    "finalSubmitted": false,
-    "mediaStatus": "Final live walkthrough and eight-slide deck verified in saved DRAFT after save and reload; no final submission yet",
+    "finalSubmitted": true,
+    "mediaStatus": "Final live walkthrough and eight-slide deck retained in submitted entry after reload; Submitted 1/1 verified",
     "videoDurationSeconds": 193.564,
     "videoPlayback": "PASS actual remote playback advanced to 27.17729 seconds, 1920x1080, readyState 4, error null; paused after verification",
     "deckDownload": "PASS HTTP 200, 61,438 bytes, exact SHA256 e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d matches local export"
   },
-  "submissionStatus": "DRAFT saved in HackOS, not submitted",
+  "submissionStatus": "SUBMITTED in HackOS; Submitted 1/1 verified after reload on October 24",
+  "submissionReceipt": "docs/evidence/submission-receipt-oct24.json",
   "finalMediaPreparation": {
     "evidence": "docs/evidence/final-media-oct24.json",
     "deck": {
@@ -117,7 +118,7 @@
       "remoteVerification": "Persisted in saved DRAFT after reload; actual playback advanced to 27.17729 seconds, duration 193.564 seconds, 1920x1080, readyState 4, error null; paused afterward"
     }
   },
-  "submitted": false,
+  "submitted": true,
   "repository": {
     "url": "https://github.com/nikolas-sapa/open-agent-order-evidence-2026",
     "visibility": "public",

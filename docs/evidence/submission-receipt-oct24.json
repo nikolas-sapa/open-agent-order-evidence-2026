@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-10-24T09:51:36Z",
+  "serverSubmissionTimestamp": null,
+  "verification": "Actual HackOS UI after Submit, Submit anyway, and a fresh page reload",
+  "url": "https://hackathon.genai.works/submissions?hackathon_id=019fd164-82b9-7382-a536-d9093c576ed2",
+  "project": "Order Evidence",
+  "track": "The Agent That Can Explain Why",
+  "submissionCard": "#1 The Agent That Can Explain Why Submitted",
+  "submitted": true,
+  "submittedCount": 1,
+  "createdCount": 1,
+  "persistedAfterReload": true,
+  "postSubmissionAction": "Save Changes replaced Submit",
+  "descriptionCharacters": 1929,
+  "video": "https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22",
+  "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
+  "repository": "https://github.com/nikolas-sapa/open-agent-order-evidence-2026",
+  "repositoryCommitAtSubmission": "3b25705b0c45dbdefe91f21a360bfe8eb436a151",
+  "anonymousRepositoryAccessVerified": true,
+  "screenshot": "submitted-oct24.jpg",
+  "boardWarning": {
+    "unfinishedTasks": 14,
+    "unfinishedRequirements": 0,
+    "chosenAction": "Submit anyway",
+    "tasksMarkedComplete": false
+  },
+  "qualityBoundary": "Submission succeeded. Full live matrix remains failed: 17/20 distinct verified cases, all 5 designated uncertainty cases passed, S18 failed twice, S19-S20 unrun. Separate real U01 source update and linked live revision/approval invalidation passed."
+}
