@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-10-24T06:34:34.997Z",
+  "claim": "Functional coverage across an initial failed batch and one explicit manual continuation. This is not an uninterrupted batch pass.",
+  "uninterruptedRunPassed": false,
+  "functionalCoveragePassed": false,
+  "distinctCompletedCases": 17,
+  "runtimeProcesses": 2,
+  "manualRecovery": {
+    "mode": "explicit manual normal Quit/relaunch and warmup",
+    "runtimeProcesses": 2,
+    "automaticRetry": false,
+    "evidence": {
+      "path": "docs/evidence/nightshift-engine-reload-oct24.json",
+      "sha256": "9126306f60b2f36b6c0e0c589f48f8341e88a8a08bf2144a88ae631c53df9d91",
+      "originalFailedCase": "SYN-ORD-18",
+      "httpStatus": 503,
+      "runtimeCode": "engine_reloaded",
+      "association": "Single sequential evaluation request; timestamp matches failed case completion"
+    }
+  },
+  "sourceUpdatesBeforeBaselineCoverage": false,
+  "reports": [
+    {
+      "path": "evaluation/results/live.json",
+      "sha256": "4b3c1f4ffdb8e2f8365ee21a0b6151aec12d9644c4a2f993d6cf5d451d085d46",
+      "completed": false,
+      "passed": false
+    },
+    {
+      "path": "evaluation/results/live-continuation-oct24.json",
+      "sha256": "bad85168d98885bbc3e73c0d1fead3cc0f7780e88cb2a7e6fcf2be87ccca837a",
+      "coversFullMatrix": false,
+      "completed": false,
+      "continuationCriteriaMet": false
+    }
+  ],
+  "groundTruth": {
+    "path": "evaluation/ground-truth.json",
+    "sha256": "357ed2727648356f6602ab53db9b75ee33c94a9f46741d606f1cc2ac188f7bd0",
+    "suppliedToProvider": false
+  },
+  "totalAttempts": 19,
+  "failedAttempts": [
+    {
+      "orderId": "SYN-ORD-18",
+      "state": "failed",
+      "elapsedMs": 49345.88008299994,
+      "observedCalls": [],
+      "error": {
+        "code": "UPSTREAM_FAILURE"
+      },
+      "report": "evaluation/results/live.json"
+    },
+    {
+      "orderId": "SYN-ORD-18",
+      "state": "failed",
+      "elapsedMs": 101078.859625,
+      "observedCalls": [],
+      "error": {
+        "code": "TIMEOUT"
+      },
+      "report": "evaluation/results/live-continuation-oct24.json"
+    }
+  ],
+  "summary": {
+    "attempted": 19,
+    "exactClassifications": 17,
+    "citationCoverage": 17,
+    "sourceVerified": 17,
+    "modelVerified": 17,
+    "completedEngineRuns": 17,
+    "uncertaintyRequests": 5
+  },
+  "referenceCheckMeaning": "Every claim contains at least one record ID and every referenced ID exists in that case. Semantic entailment was not audited.",
+  "observed": {
+    "successfulInvestigationLatencyMs": {
+      "min": 7000.454040999999,
+      "max": 81966.285167
+    },
+    "successfulModelCalls": 17,
+    "returnedModelCallsAcrossAllAttempts": 17,
+    "reportedTokens": 12940,
+    "reportedCostUsd": 0,
+    "missingTokenUsageCalls": 0,
+    "missingCostCalls": 0,
+    "costBasis": "Sum of returned Nightshift-reported actual_usd. Not independently verified billing; failed calls without responses have unknown usage/cost."
+  },
+  "notEstablished": [
+    "uninterrupted 20-case Runtime reliability",
+    "semantic citation entailment",
+    "source update behavior",
+    "approval invalidation",
+    "independently verified billing"
+  ]
+}

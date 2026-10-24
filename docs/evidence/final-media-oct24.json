@@ -1,0 +1,54 @@
+{
+  "verifiedAt": "2026-10-24T09:44:07.285Z",
+  "video": {
+    "file": "order-evidence-live-oct24.mp4",
+    "bytes": 5070012,
+    "sha256": "018d203a31589f74958d7bf1d445463b32caada75deb350947acf999e90f0386",
+    "durationSeconds": 193.584333,
+    "format": "H.264 1920x1080 24fps; AAC 48kHz mono",
+    "kind": "Narrated actual-UI screenshot walkthrough, standard local Daniel synthetic voice; not continuous screen recording",
+    "fullDecodeErrors": 0,
+    "encodedScenesInspected": 8,
+    "audioChecks": {
+      "meanDb": -19.4,
+      "peakDb": -0.9,
+      "humanListeningPerformed": false
+    },
+    "url": "https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22",
+    "remotePlayback": {
+      "durationSeconds": 193.564,
+      "observedCurrentTime": 27.17729,
+      "readyState": 4,
+      "error": null,
+      "videoWidth": 1920,
+      "videoHeight": 1080,
+      "pausedDuringVerification": false
+    }
+  },
+  "deck": {
+    "file": "order-evidence-final-oct23.pptx",
+    "bytes": 61438,
+    "sha256": "e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d",
+    "factsAsOf": "2026-10-24",
+    "slides": 8,
+    "renderedAndInspected": 8,
+    "packageFindings": 0,
+    "layoutFindings": 0,
+    "importedSlides": 8,
+    "sourceImagePreserved": true,
+    "url": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
+    "remoteDownload": {
+      "url": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
+      "status": 200,
+      "bytes": 61438,
+      "sha256": "e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d",
+      "match": true,
+      "verifiedAt": "2026-10-24T09:46:00.180Z"
+    }
+  },
+  "scope": "Synthetic-only demo includes verified real U01 source update and linked live revision; full 20-case live matrix remains failed (17/20 distinct cases).",
+  "uploadVerified": true,
+  "submitted": false,
+  "uploadVerifiedAt": "2026-10-24T09:46:50.141Z",
+  "savedDraftReloadVerified": true
+}

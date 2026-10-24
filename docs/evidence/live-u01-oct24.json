@@ -1,0 +1,406 @@
+{
+  "verifiedAt": "2026-10-24T09:40:15.196Z",
+  "purpose": "Real governed synthetic U01 source update, live linked revision, prior automated demonstration approval invalidated",
+  "verified": true,
+  "matrixAccounting": "Separate source-update demonstration; not additional distinct matrix coverage. Full live matrix remains failed.",
+  "id": "66f643f8-2d2b-4056-9561-3acfd8b58609",
+  "orderId": "SYN-ORD-03",
+  "mode": "live",
+  "revisions": [
+    {
+      "id": "41afb167-fef9-4fbd-983f-ba92813a244a",
+      "number": 1,
+      "previousRevisionId": null,
+      "createdAt": "2026-10-23T10:37:38.595Z",
+      "assessmentAt": "2026-10-23T09:00:00Z",
+      "evidenceFingerprint": "ea672d57f75fba81a67423fed9968e424f011ffd05f59f8ee6df688fdf22f27f",
+      "records": [
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-order::SYN-ORD-03::v1",
+          "sourceId": "synthetic-order",
+          "recordId": "SYN-ORD-03",
+          "version": 1,
+          "kind": "order",
+          "observedAt": "2026-10-23T08:00:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "orderedQuantity": 10,
+            "itemId": "item-03",
+            "location": "warehouse-3",
+            "promiseDate": "2026-10-26T00:00:00Z"
+          }
+        },
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-stock::SYN-STK-03::v1",
+          "sourceId": "synthetic-stock",
+          "recordId": "SYN-STK-03",
+          "version": 1,
+          "kind": "stock",
+          "observedAt": "2026-10-23T08:05:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "quantity": 2,
+            "location": "warehouse-3",
+            "item": "item-03"
+          }
+        },
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-supplier::SYN-SUP-03::v1",
+          "sourceId": "synthetic-supplier",
+          "recordId": "SYN-SUP-03",
+          "version": 1,
+          "kind": "supplier",
+          "observedAt": "2026-10-23T08:10:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "quantity": 8,
+            "eta": "2026-10-28T00:00:00Z",
+            "state": "confirmed",
+            "scope": "item-03"
+          }
+        }
+      ],
+      "assessment": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ],
+        "claims": [
+          {
+            "text": "Ordered quantity 10; promise 2026-10-26T00:00:00Z.",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1"
+            ]
+          },
+          {
+            "text": "Current available stock totals 2.",
+            "evidenceIds": [
+              "synthetic-stock::SYN-STK-03::v1"
+            ]
+          },
+          {
+            "text": "Current confirmed supplier quantity 8; arrival 2026-10-28T00:00:00Z.",
+            "evidenceIds": [
+              "synthetic-supplier::SYN-SUP-03::v1"
+            ]
+          },
+          {
+            "text": "Order at risk: late replenishment.",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1",
+              "synthetic-stock::SYN-STK-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v1"
+            ]
+          }
+        ],
+        "uncertainty": [],
+        "options": [
+          {
+            "id": "review-recovery",
+            "label": "Review a recovery plan",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1",
+              "synthetic-stock::SYN-STK-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v1"
+            ]
+          }
+        ],
+        "draft": {
+          "optionId": "review-recovery",
+          "text": "Order at risk: late replenishment. Review a recovery plan. Human review required; no message has been sent.",
+          "evidenceIds": [
+            "synthetic-order::SYN-ORD-03::v1",
+            "synthetic-stock::SYN-STK-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v1"
+          ]
+        }
+      },
+      "receipts": [
+        {
+          "id": "634880ab-7449-4ae1-ab2f-7fbbee20e86e",
+          "source": "zetaris",
+          "method": "/api/proxy/sql-editor/sqls/run-query",
+          "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-03'",
+          "at": "2026-10-23T10:37:31.247Z",
+          "scope": "SYN-ORD-03",
+          "returnedIds": [
+            "synthetic-order::SYN-ORD-03::v1",
+            "synthetic-stock::SYN-STK-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v1"
+          ],
+          "rowCount": 1
+        }
+      ],
+      "engine": {
+        "name": "Meterless Markovian",
+        "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
+        "status": "completed",
+        "runId": "run-1",
+        "chunks": [
+          {
+            "id": 1,
+            "tokens": 15,
+            "carryover": "",
+            "content": "Evidence retrieved; immutable source references retained."
+          },
+          {
+            "id": 2,
+            "tokens": 23,
+            "carryover": "Evidence retrieved; immutable source references retained.",
+            "content": "Assessment completed using deterministic evidence validation; draft requires human approval."
+          }
+        ],
+        "durationMs": 10270,
+        "tokenLabel": "estimated",
+        "totalTokensUsed": 38
+      },
+      "provider": {
+        "kind": "nightshift",
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 735,
+          "completion_tokens": 34,
+          "total_tokens": 769
+        },
+        "cost": 0,
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+        "attempts": 1,
+        "calls": [
+          {
+            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "usage": {
+              "prompt_tokens": 735,
+              "completion_tokens": 34,
+              "total_tokens": 769
+            },
+            "cost": 0,
+            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "receiptId": "rcpt_req_a55oqaeq",
+            "privacyPath": "local-only",
+            "costBasis": "Nightshift-reported actual_usd; not independently verified billing"
+          }
+        ],
+        "validated": true
+      },
+      "changedEvidenceIds": [
+        "synthetic-order::SYN-ORD-03::v1",
+        "synthetic-stock::SYN-STK-03::v1",
+        "synthetic-supplier::SYN-SUP-03::v1"
+      ]
+    },
+    {
+      "id": "092ddb2f-da04-42a6-a013-7a5f7a46d739",
+      "number": 2,
+      "previousRevisionId": "41afb167-fef9-4fbd-983f-ba92813a244a",
+      "createdAt": "2026-10-24T09:39:02.904Z",
+      "assessmentAt": "2026-10-23T10:00:00Z",
+      "evidenceFingerprint": "3a5dbc92d004d77472847c2b5d3ba32abcc8ae936d1de7012000d8b9f13bac4e",
+      "records": [
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-order::SYN-ORD-03::v1",
+          "sourceId": "synthetic-order",
+          "recordId": "SYN-ORD-03",
+          "version": 1,
+          "kind": "order",
+          "observedAt": "2026-10-23T08:00:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "orderedQuantity": 10,
+            "itemId": "item-03",
+            "location": "warehouse-3",
+            "promiseDate": "2026-10-26T00:00:00Z"
+          }
+        },
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-stock::SYN-STK-03::v1",
+          "sourceId": "synthetic-stock",
+          "recordId": "SYN-STK-03",
+          "version": 1,
+          "kind": "stock",
+          "observedAt": "2026-10-23T08:05:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "quantity": 2,
+            "location": "warehouse-3",
+            "item": "item-03"
+          }
+        },
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-supplier::SYN-SUP-03::v1",
+          "sourceId": "synthetic-supplier",
+          "recordId": "SYN-SUP-03",
+          "version": 1,
+          "kind": "supplier",
+          "observedAt": "2026-10-23T08:10:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "quantity": 8,
+            "eta": "2026-10-28T00:00:00Z",
+            "state": "confirmed",
+            "scope": "item-03"
+          }
+        },
+        {
+          "orderId": "SYN-ORD-03",
+          "id": "synthetic-supplier::SYN-SUP-03::v2",
+          "sourceId": "synthetic-supplier",
+          "recordId": "SYN-SUP-03",
+          "version": 2,
+          "kind": "supplier",
+          "observedAt": "2026-10-23T09:50:00Z",
+          "effectiveAt": "2026-10-23T00:00:00Z",
+          "fields": {
+            "quantity": 8,
+            "state": "confirmed",
+            "scope": "item-03",
+            "eta": "2026-10-25T00:00:00Z"
+          }
+        }
+      ],
+      "assessment": {
+        "status": "on-track",
+        "causes": [],
+        "claims": [
+          {
+            "text": "Ordered quantity 10; promise 2026-10-26T00:00:00Z.",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1"
+            ]
+          },
+          {
+            "text": "Current available stock totals 2.",
+            "evidenceIds": [
+              "synthetic-stock::SYN-STK-03::v1"
+            ]
+          },
+          {
+            "text": "Current confirmed supplier quantity 8; arrival 2026-10-25T00:00:00Z.",
+            "evidenceIds": [
+              "synthetic-supplier::SYN-SUP-03::v2"
+            ]
+          },
+          {
+            "text": "Current evidence supports meeting the promised quantity and date.",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1",
+              "synthetic-stock::SYN-STK-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v2"
+            ]
+          }
+        ],
+        "uncertainty": [],
+        "options": [
+          {
+            "id": "monitor",
+            "label": "Monitor current commitment",
+            "evidenceIds": [
+              "synthetic-order::SYN-ORD-03::v1",
+              "synthetic-stock::SYN-STK-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v1",
+              "synthetic-supplier::SYN-SUP-03::v2"
+            ]
+          }
+        ],
+        "draft": {
+          "optionId": "monitor",
+          "text": "Current evidence supports meeting the promised quantity and date. Monitor current commitment. Human review required; no message has been sent.",
+          "evidenceIds": [
+            "synthetic-order::SYN-ORD-03::v1",
+            "synthetic-stock::SYN-STK-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v2"
+          ]
+        }
+      },
+      "receipts": [
+        {
+          "id": "3058f7a6-7db4-41d2-b7b9-2a8856760273",
+          "source": "zetaris",
+          "method": "/api/proxy/sql-editor/sqls/run-query",
+          "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-03'",
+          "at": "2026-10-24T09:38:39.589Z",
+          "scope": "SYN-ORD-03",
+          "returnedIds": [
+            "synthetic-order::SYN-ORD-03::v1",
+            "synthetic-stock::SYN-STK-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v1",
+            "synthetic-supplier::SYN-SUP-03::v2"
+          ],
+          "rowCount": 1
+        }
+      ],
+      "engine": {
+        "name": "Meterless Markovian",
+        "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
+        "status": "completed",
+        "runId": "run-1",
+        "chunks": [
+          {
+            "id": 1,
+            "tokens": 15,
+            "carryover": "",
+            "content": "Evidence retrieved; immutable source references retained."
+          },
+          {
+            "id": 2,
+            "tokens": 23,
+            "carryover": "Evidence retrieved; immutable source references retained.",
+            "content": "Assessment completed using deterministic evidence validation; draft requires human approval."
+          }
+        ],
+        "durationMs": 31617,
+        "tokenLabel": "estimated",
+        "totalTokensUsed": 38
+      },
+      "provider": {
+        "kind": "nightshift",
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 768,
+          "completion_tokens": 15,
+          "total_tokens": 783
+        },
+        "cost": 0,
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+        "attempts": 1,
+        "calls": [
+          {
+            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "usage": {
+              "prompt_tokens": 768,
+              "completion_tokens": 15,
+              "total_tokens": 783
+            },
+            "cost": 0,
+            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "receiptId": "rcpt_req_fhqu3j99",
+            "privacyPath": "local-only",
+            "costBasis": "Nightshift-reported actual_usd; not independently verified billing"
+          }
+        ],
+        "validated": true
+      },
+      "changedEvidenceIds": [
+        "synthetic-supplier::SYN-SUP-03::v2"
+      ]
+    }
+  ],
+  "currentRevisionId": "092ddb2f-da04-42a6-a013-7a5f7a46d739",
+  "approvals": [
+    {
+      "id": "6d03d7a2-8cb3-4d6e-b9ad-0a80108b7198",
+      "revisionId": "41afb167-fef9-4fbd-983f-ba92813a244a",
+      "createdAt": "2026-10-23T10:40:49.373Z",
+      "invalidatedAt": "2026-10-24T09:39:02.904Z"
+    }
+  ]
+}

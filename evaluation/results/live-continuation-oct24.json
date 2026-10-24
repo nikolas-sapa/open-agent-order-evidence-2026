@@ -1,0 +1,66 @@
+{
+  "startedAt": "2026-10-24T06:32:53.722Z",
+  "mode": "live-manual-continuation",
+  "node": "v24.22.1",
+  "scope": "Only S18–S20 after explicit normal operator Runtime relaunch; same sealed labels, actual source and unchanged product provider.",
+  "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+  "requestedMaxPrice": 0,
+  "discoveryDeadlineMs": 8000,
+  "completionDeadlineMs": 80000,
+  "coversFullMatrix": false,
+  "completed": false,
+  "continuationCriteriaMet": false,
+  "originalReport": {
+    "path": "evaluation/results/live.json",
+    "sha256": "4b3c1f4ffdb8e2f8365ee21a0b6151aec12d9644c4a2f993d6cf5d451d085d46",
+    "completed": false,
+    "passed": false
+  },
+  "groundTruth": {
+    "path": "evaluation/ground-truth.json",
+    "sha256": "357ed2727648356f6602ab53db9b75ee33c94a9f46741d606f1cc2ac188f7bd0",
+    "suppliedToProvider": false
+  },
+  "recovery": {
+    "mode": "explicit manual normal Quit/relaunch and warmup",
+    "runtimeProcesses": 2,
+    "automaticRetry": false,
+    "evidence": {
+      "path": "docs/evidence/nightshift-engine-reload-oct24.json",
+      "sha256": "9126306f60b2f36b6c0e0c589f48f8341e88a8a08bf2144a88ae631c53df9d91",
+      "originalFailedCase": "SYN-ORD-18",
+      "httpStatus": 503,
+      "runtimeCode": "engine_reloaded",
+      "association": "Single sequential evaluation request; timestamp matches failed case completion"
+    }
+  },
+  "cases": [
+    {
+      "orderId": "SYN-ORD-18",
+      "state": "failed",
+      "elapsedMs": 101078.859625,
+      "observedCalls": [],
+      "error": {
+        "code": "TIMEOUT"
+      }
+    }
+  ],
+  "notEvaluatedByThisRun": [
+    "source updates",
+    "approval invalidation",
+    "process restart durability",
+    "billing verification",
+    "semantic citation entailment",
+    "Cursor contribution"
+  ],
+  "finishedAt": "2026-10-24T06:34:34.956Z",
+  "summary": {
+    "attempted": 1,
+    "exactClassifications": 0,
+    "citationCoverage": 0,
+    "sourceVerified": 0,
+    "modelVerified": 0,
+    "completedEngineRuns": 0,
+    "uncertaintyRequests": 0
+  }
+}

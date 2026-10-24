@@ -3,7 +3,7 @@
   "event": "Open Agent Hackathon 2026",
   "track": "The Agent That Can Explain Why",
   "buildStartedOn": "2026-10-22",
-  "status": "representative-live-working-batch-validation-incomplete",
+  "status": "partial-live-functional-coverage-matrix-failed",
   "data": "Synthetic only; fixed business assessment dates, actual execution timestamps stored separately",
   "sponsors": {
     "Meterless": {
@@ -11,17 +11,20 @@
       "commit": "0aa7417ba5c826396d91e891328be78c45e6fbf6",
       "license": "Apache-2.0",
       "execution": "Genuine pinned executor drives retrieval/assessment in preview and real live workflow; representative live status completed with actual source/model receipts.",
-      "Nightshift": "Official M1-M4 0.92.1, discovered concrete WebLLM Qwen2.5-1.5B pin through authenticated loopback Runtime. Representative live selection validated; model reports local-only and actual_usd0. First broader batch:2 validated cases,2 rejected selections,1 provider failure; no cloud keys or paid upgrade."
+      "Nightshift": "Official M1-M4 0.92.1, discovered concrete WebLLM Qwen2.5-1.5B pin through authenticated loopback Runtime. Fresh UUID memory scope per request, max_price: 0, max_tokens: 256, 80-second completion deadline, at most 1 correction. October 24 campaign: 17/20 distinct real source/model/engine cases validated; S18 failed twice, S19-S20 unrun. Full matrix and uninterrupted run failed. Reports local-only and actual_usd: 0; billing not independently verified. No cloud keys or paid upgrade."
     },
     "Zetaris": {
       "role": "Bounded source retrieval through local account UI proxy",
-      "status": "Real local registration and scoped retrieval verified20/20 on October23; payloads deep-equal fixed synthetic cases; actual duplicate-container control HTTP400",
-      "earlierGenericSetup": "9/9 vendor checks passed October19, separate from application integration",
+      "status": "Real local registration and scoped retrieval verified 20/20 on October 23; payloads deep-equal fixed synthetic cases; actual duplicate-container control HTTP 400",
+      "sourceUpdate": "U01 applied to the dedicated synthetic view on October 24: changed true, 1 guarded write, 20 post-write payloads verified with 20 retrieval receipts. Live Order 003 linked on-track revision 2 retained old records, added supplier v2 and invalidated the prior automated demonstration approval; current revision remains unapproved.",
+      "sourceUpdateEvidence": "docs/evidence/zetaris-u01-oct24.json",
+      "liveUpdateEvidence": "docs/evidence/live-u01-oct24.json",
+      "earlierGenericSetup": "9/9 vendor checks passed October 19, separate from application integration",
       "transport": "/api/proxy/sql-editor/sqls/run-query",
       "evidence": "docs/evidence/zetaris-source-oct23.json"
     },
     "Cursor": {
-      "status": "Genuine desktop-agent U07 test completed using included access. Organizer October22 announcement: Cursor optional; no free Cursor credits for this event. No paid upgrade purchased.",
+      "status": "Genuine desktop-agent U07 test completed using included access. Organizer October 22 announcement: Cursor optional; no free Cursor credits for this event. No paid upgrade purchased.",
       "evidence": "docs/CURSOR_PROVENANCE_OCT23.md"
     },
     "NVIDIA": {
@@ -34,7 +37,7 @@
       "contribution": "Core, integration, UI, tests, review and documentation"
     },
     {
-      "name": "Cursor desktop3.27.6",
+      "name": "Cursor desktop 3.27.6",
       "observedModelLabel": "Cursor Grok4.6 Medium",
       "contribution": "Authored test/cursor-u07.test.mjs through installed desktop agent operated by Codex; no manual participant authorship claimed"
     }
@@ -44,10 +47,10 @@
   "providerTokens": null,
   "providerCost": null,
   "frameworks": [],
-  "runtime": "Node24.19.0, native ES modules/HTTP/fetch/test/fs/crypto, experimental TypeScript transform",
+  "runtime": "Node 24.19.0, native ES modules/HTTP/fetch/test/fs/crypto, experimental TypeScript transform",
   "runtimeNpmDependencies": [],
   "importedComponents": [
-    "Pinned unmodified Meterless engine and Apache2.0 license",
+    "Pinned unmodified Meterless engine and Apache 2.0 license",
     "Participant-owned pre-existing Ledger static layout reference",
     "Geist font files with SIL OFL"
   ],
@@ -55,30 +58,65 @@
     "nativeTestsPassed": 38,
     "previewClassifications": "20/20",
     "realMarkovianPreviewRuns": "20/20",
-    "liveA01A02A03": "INCOMPLETE: first batch5attempted,2exact/validated,2explicitunverified,1providerfailure; source update not yet run",
+    "nativeTestsVerifiedOn": "2026-10-24",
+    "liveA01A02A03": "FAILED full live matrix: 17/20 distinct exact source/model/engine/citation cases, 5/5 designated uncertainty cases. 19 attempts include S18 HTTP 503 engine_reloaded and a manual-continuation timeout after normal app restart; S19-S20 unrun. Separate U01 source write, 20 post-write payload checks and live linked revision/approval invalidation passed. This is 1 live update, not the full 10-update live acceptance.",
+    "liveU01": "PASS separate demonstration: same canonical Order 003 investigation, at-risk revision 1 to linked on-track revision 2; original 3 records unchanged, supplier v2 added, prior automated demonstration approval invalidated, current revision unapproved. Markovian duration 31.617 seconds; 1 validated Nightshift call, 783 reported tokens and reported USD 0, not independently verified billing. docs/evidence/live-u01-oct24.json",
+    "liveCampaignEvidence": "docs/evidence/live-campaign-oct24.json",
+    "liveCampaignSourcePhase": "The 17/20 campaign and failed continuation used fixed base evidence before U01. The current dedicated view is post-U01, with Order 003 on track; unchanged baseline labels must not be compared blindly against that updated source. No full post-U01 matrix rerun was performed.",
+    "liveFunctionalCoveragePassed": false,
+    "liveUninterruptedRunPassed": false,
+    "liveReturnedUsage": "17 successful returned calls, 12,940 reported tokens, USD 0 reported actual_usd. Failed-call usage/cost unknown; billing not independently verified.",
     "processRestartPersistence": "2 process restarts passed in native test",
     "A05": "PASS representative real Zetaris retrieval and completed Markovian execution with validated Nightshift call; docs/evidence/nightshift-first-live-oct23.json",
-    "A06": "Browser grounded result observed within31.9seconds; reported usage769tokens and Runtimeactual_usd0. Independent billing/electricity not verified.",
-    "mobileScreenshot": "PASS,390x844,0 horizontal overflow; citation opens supplier v2; desktop1440x900 also checked",
-    "realZetarisSource": "20/20 payloads verified; app source check order003 retrieves3records",
-    "cursorU07": "1/1 dedicated test; Cursor then-current suite25/25; independent current suite27/27",
-    "freshClone": "PASS October23:27/27 native tests,20/20 preview classifications and real Markovian runs,0 dependency installs"
+    "A06": "Representative S03 investigation: 23.3736 seconds, 769 reported tokens, Runtime actual_usd: 0. Separate browser result upper bound: 31.873 seconds, not exact render time or universal latency. October 24 successful campaign investigation range: 7.0-82.0 seconds; failed continuation: 101.079 seconds. Independent billing/electricity not verified.",
+    "mobileScreenshot": "PASS, 390x844, 0 horizontal overflow; citation opens supplier v2; desktop 1440x900 also checked",
+    "realZetarisSource": "October 23: 20/20 base payloads verified; order 003 retrieved 3 records. October 24: all 20 U01 post-write payloads verified; order 003 source receipt retains 4 immutable records including supplier v1 and v2.",
+    "cursorU07": "1/1 dedicated test; Cursor then-current suite 25/25; independent October 23 suite 27/27. Current overall native suite 38/38.",
+    "freshClone": "PASS October 23: 27/27 native tests, 20/20 preview classifications and real Markovian runs, 0 dependency installs"
   },
   "submissionCreated": true,
   "publicDeployment": false,
   "submissionDraft": {
     "saved": true,
     "track": "The Agent That Can Explain Why",
-    "descriptionCharacters": 1669,
-    "video": "https://iframe.mediadelivery.net/embed/778121/78e47793-d716-4590-af60-c6d41bafd227",
-    "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/4c9e9bbf742c4809a58fd04c75424dec.pptx",
+    "descriptionCharacters": 1929,
+    "preparedDescriptionCharacters": 1929,
+    "descriptionUpdatePending": false,
+    "video": "https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22",
+    "deck": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
     "finalSubmitted": false,
-    "mediaStatus": "DRAFT synthetic preview; both uploads persisted after reload",
-    "videoDurationSeconds": 181.489,
-    "videoPlayback": "PASS muted browser playback1920x1080,readyState4,errornull",
-    "deckDownload": "PASS exact SHA256 matches local export"
+    "mediaStatus": "Final live walkthrough and eight-slide deck verified in saved DRAFT after save and reload; no final submission yet",
+    "videoDurationSeconds": 193.564,
+    "videoPlayback": "PASS actual remote playback advanced to 27.17729 seconds, 1920x1080, readyState 4, error null; paused after verification",
+    "deckDownload": "PASS HTTP 200, 61,438 bytes, exact SHA256 e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d matches local export"
   },
   "submissionStatus": "DRAFT saved in HackOS, not submitted",
+  "finalMediaPreparation": {
+    "evidence": "docs/evidence/final-media-oct24.json",
+    "deck": {
+      "filename": "order-evidence-final-oct23.pptx",
+      "contentDate": "2026-10-24",
+      "slides": 8,
+      "bytes": 61438,
+      "sha256": "e7e933ec0b96549da31701f00154aa5c3c73b79481a3b52f85bd93975106910d",
+      "verification": "Local export verified: 8 slides re-imported, 0 integrity/layout findings, Geist fonts and source image preserved; visual review covered slides 5 and 8.",
+      "uploadVerified": true,
+      "url": "https://hackathon-server.genai.works/api/v1/cdn/proxy/hackathon/2405b06a26524e549e104b062607c3da.pptx",
+      "remoteVerification": "Persisted in saved DRAFT after reload; HTTP 200 download, 61,438 bytes, exact local SHA256 match"
+    },
+    "video": {
+      "filename": "order-evidence-live-oct24.mp4",
+      "durationSeconds": 193.584333,
+      "bytes": 5070012,
+      "sha256": "018d203a31589f74958d7bf1d445463b32caada75deb350947acf999e90f0386",
+      "format": "H.264, 1920x1080, 24 fps; AAC, 48 kHz, mono",
+      "content": "Narrated screenshot walkthrough of actual live UI, including U01 linked revision history and prior automated demonstration approval invalidation; not continuous screen recording.",
+      "verification": "Local decode completed with 0 errors. All 8 encoded scenes were visually reviewed, including legible U01 UI. Automated audio mean -19.4 dB, peak -0.9 dB; human listening not performed.",
+      "uploadVerified": true,
+      "url": "https://iframe.mediadelivery.net/embed/778121/7ef4784a-f77f-4a4f-9c61-5bc78281de22",
+      "remoteVerification": "Persisted in saved DRAFT after reload; actual playback advanced to 27.17729 seconds, duration 193.564 seconds, 1920x1080, readyState 4, error null; paused afterward"
+    }
+  },
   "submitted": false,
   "repository": {
     "url": "https://github.com/nikolas-sapa/open-agent-order-evidence-2026",

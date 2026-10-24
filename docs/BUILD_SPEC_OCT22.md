@@ -75,6 +75,14 @@ Tests before implementation: every completion request must include the implement
 
 Implementation: set max_price:0 in the completion body. Shipped proxy.js accepts a zero request price, web-daemon maps it to a zero budget, and orchestrator's optional refinement/verifier/consensus gates require remaining positive budget. The concrete model pin remains unchanged. Non-goals: no vendor patch, global preferences, unsupported private options, cloud credentials, further deadline increases or claims about the unobserved cause of previous extra phases.
 
+## October24 manual validation continuation
+
+Verification plan: preserve the zero-cap batch's17 successful cases and its failed S18 attempt unchanged. The Runtime returned503 engine_reloaded. After a normal operator relaunch, separately validate S18–S20 against the same sealed labels and actual source/model/engine requirements. Retain the failed batch's completed:false/passed:false. A combined coverage artifact must identify both reports, all20 distinct predefined cases, every recorded failed attempt and the explicit manual recovery; it must not claim an uninterrupted batch pass. Thresholds remain >=18 exact classifications,20 reference/source/model/engine checks and5 uncertainty requests for functional coverage.
+
+October 24 outcome: the manual continuation also failed at S18 (timeout); S19–S20 remain unrun. Functional coverage and uninterrupted-run acceptance are both failed, with 17/20 distinct validated cases and 5/5 uncertainty cases. These thresholds remain unchanged. The separate real U01 demonstration passed: one guarded source write, 20 post-write payload checks, linked live revision 2, retained version 1 and invalidated prior automated approval. Submission describes a working prototype with these explicit reliability limits.
+
+Implementation scope: a private continuation harness and factual evidence only. No product retry, altered policy, hidden provider fallback, source mutation before baseline coverage, or further timeout increase.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.

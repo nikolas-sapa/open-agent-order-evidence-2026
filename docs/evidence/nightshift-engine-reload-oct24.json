@@ -1,0 +1,18 @@
+{
+  "source": "Official Nightshift 0.92.1 native Runtime HTTP log",
+  "observedAt": "2026-10-24T06:21:13.000Z",
+  "event": "[1792822873] runtime: POST /v1/chat/completions ← 127.0.0.1 → 503 engine_reloaded",
+  "associatedCase": "SYN-ORD-18",
+  "association": "Single sequential evaluation request; timestamp matches failed case completion",
+  "httpStatus": 503,
+  "runtimeCode": "engine_reloaded",
+  "originalEvaluation": "evaluation/results/live.json",
+  "originalEvaluationPassed": false,
+  "recovery": {
+    "method": "Normal application Quit and relaunch; cached model files retained",
+    "warmupOnly": true,
+    "warmupElapsedMs": 14195.958541,
+    "warmupTotalTokens": 22
+  },
+  "acceptancePass": false
+}

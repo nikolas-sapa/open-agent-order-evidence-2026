@@ -1,0 +1,291 @@
+{
+  "view": "order_evidence.records",
+  "updateId": "U01",
+  "changed": true,
+  "writes": 1,
+  "verified": 20,
+  "receipts": [
+    {
+      "id": "04b785d2-58cd-46ed-8eea-5ae9ee92abb2",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-01'",
+      "at": "2026-10-24T09:36:27.662Z",
+      "scope": "SYN-ORD-01",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-01::v1",
+        "synthetic-stock::SYN-STK-01::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "c5049135-b0ff-4cb9-aba5-3c4d1840129c",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-02'",
+      "at": "2026-10-24T09:36:31.469Z",
+      "scope": "SYN-ORD-02",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-02::v1",
+        "synthetic-stock::SYN-STK-02::v1",
+        "synthetic-supplier::SYN-SUP-02::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "3b6ca228-783a-4326-8e80-c546b8bce8d1",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-03'",
+      "at": "2026-10-24T09:36:34.299Z",
+      "scope": "SYN-ORD-03",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-03::v1",
+        "synthetic-stock::SYN-STK-03::v1",
+        "synthetic-supplier::SYN-SUP-03::v1",
+        "synthetic-supplier::SYN-SUP-03::v2"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "a6be14e8-e3fd-43f0-9e24-112fb5ee25dd",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-04'",
+      "at": "2026-10-24T09:36:38.248Z",
+      "scope": "SYN-ORD-04",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-04::v1",
+        "synthetic-receipt::SYN-RET-04::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "237b9574-8a30-4260-9ff3-8bf9de8e8bfa",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-05'",
+      "at": "2026-10-24T09:36:48.173Z",
+      "scope": "SYN-ORD-05",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-05::v1",
+        "synthetic-stock::SYN-STK-05::v1",
+        "synthetic-supplier::SYN-SUP-05::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "9afbd6eb-808b-48a1-9be5-b32f35d4d473",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-06'",
+      "at": "2026-10-24T09:36:54.287Z",
+      "scope": "SYN-ORD-06",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-06::v1",
+        "synthetic-stock::SYN-STK-06::v1",
+        "synthetic-supplier::SYN-SUP-06::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "99ecf4c1-07c1-4c4f-a70b-e191a33f78b9",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-07'",
+      "at": "2026-10-24T09:36:59.048Z",
+      "scope": "SYN-ORD-07",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-07::v1",
+        "synthetic-stock::SYN-STK-07::v1",
+        "synthetic-supplier::SYN-SUP-07::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "1509aa84-6f45-455e-bbf6-9901764d2695",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-08'",
+      "at": "2026-10-24T09:37:02.766Z",
+      "scope": "SYN-ORD-08",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-08::v1",
+        "synthetic-stock::SYN-STK-08::v1",
+        "synthetic-supplier::SYN-SUP-08::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "197fd8f3-0b0d-4c5a-ac5c-350f43bd60a2",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-09'",
+      "at": "2026-10-24T09:37:05.598Z",
+      "scope": "SYN-ORD-09",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-09::v2",
+        "synthetic-fulfillment::SYN-FUL-09::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "0fc3d01d-534d-4fc6-a224-8e478ef04752",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-10'",
+      "at": "2026-10-24T09:37:07.078Z",
+      "scope": "SYN-ORD-10",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-10::v1",
+        "synthetic-stock::SYN-STK-10::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "956ea531-06f0-4f4c-b50b-6d2e9c1ee87c",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-11'",
+      "at": "2026-10-24T09:37:10.052Z",
+      "scope": "SYN-ORD-11",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-11::v1",
+        "synthetic-stockA::SYN-STK-11A::v7",
+        "synthetic-stockB::SYN-STK-11B::v2"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "ab0e114e-a81d-49dd-80bd-32f0e069a779",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-12'",
+      "at": "2026-10-24T09:37:16.389Z",
+      "scope": "SYN-ORD-12",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-12::v1",
+        "synthetic-stock::SYN-STK-12::v1",
+        "synthetic-supplierA::SYN-SUP-12A::v3",
+        "synthetic-supplierB::SYN-SUP-12B::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "c867473b-c0cd-4c23-94ab-cc8bbd4647eb",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-13'",
+      "at": "2026-10-24T09:37:40.888Z",
+      "scope": "SYN-ORD-13",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-13::v1",
+        "synthetic-stock::SYN-STK-13::v1",
+        "synthetic-receipt::SYN-RET-13::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "1e64d563-346f-4473-b6c7-5d323c60a78b",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-14'",
+      "at": "2026-10-24T09:37:48.226Z",
+      "scope": "SYN-ORD-14",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-14::v1",
+        "synthetic-stock::SYN-STK-14::v1",
+        "synthetic-supplier::SYN-SUP-14::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "bf2dbf36-14cb-4fbb-8c9f-39b07d8b71fb",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-15'",
+      "at": "2026-10-24T09:37:54.022Z",
+      "scope": "SYN-ORD-15",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-15::v1",
+        "synthetic-stock::SYN-STK-15::v1",
+        "synthetic-supplierA::SYN-SUP-15A::v1",
+        "synthetic-supplierB::SYN-SUP-15B::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "4b69a79b-86ed-4985-ae96-b9ffd012f74e",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-16'",
+      "at": "2026-10-24T09:38:00.977Z",
+      "scope": "SYN-ORD-16",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-16::v1",
+        "synthetic-stock::SYN-STK-16::v1",
+        "synthetic-supplier::SYN-SUP-16::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "f89fff3c-2553-4a49-8634-2859f027d035",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-17'",
+      "at": "2026-10-24T09:38:04.897Z",
+      "scope": "SYN-ORD-17",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-17::v1",
+        "synthetic-stock::SYN-STK-17::v1",
+        "synthetic-supplier::SYN-SUP-17::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "c24ed283-58e7-4860-8c21-941417490b69",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-18'",
+      "at": "2026-10-24T09:38:06.674Z",
+      "scope": "SYN-ORD-18",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-18::v1",
+        "synthetic-stock::SYN-STK-18::v1",
+        "synthetic-supplier::SYN-SUP-18::v1",
+        "synthetic-supplier::SYN-SUP-18::v2",
+        "synthetic-receipt::SYN-RET-18::v1"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "aef1d280-d683-4fb5-9878-ffb36b798a40",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-19'",
+      "at": "2026-10-24T09:38:13.967Z",
+      "scope": "SYN-ORD-19",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-19::v1",
+        "synthetic-stock::SYN-STK-19::v1",
+        "synthetic-supplier::SYN-SUP-19::v1",
+        "synthetic-supplier::SYN-SUP-19::v2"
+      ],
+      "rowCount": 1
+    },
+    {
+      "id": "56ee210a-f6fe-47ce-8935-e946e35e6076",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-20'",
+      "at": "2026-10-24T09:38:17.246Z",
+      "scope": "SYN-ORD-20",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-20::v1",
+        "synthetic-stock::SYN-STK-20::v1",
+        "synthetic-supplier::SYN-SUP-20::v1"
+      ],
+      "rowCount": 1
+    }
+  ]
+}
