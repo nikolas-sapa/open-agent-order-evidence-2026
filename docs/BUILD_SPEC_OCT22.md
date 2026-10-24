@@ -61,6 +61,14 @@ Nightshift M1 request compatibility, tests before implementation: actual Runtime
 
 Stateless selection isolation, tests before implementation: vendor HMEM reads exact meterless-scope and injects similar previous answers. Shared user scope permits cross-order and cross-revision contamination. Every authenticated Runtime request must use a new server-generated order-evidence UUID namespace, including a correction attempt; two selections produce4distinct request scopes across discovery/completion, with0shared namespaces. Authorization/app policy remain unchanged. Actual S02/S04 fresh-scope diagnostics must pass before claiming the memory problem resolved. This changes memory context only, not domain validation, source data or acceptance thresholds.
 
+## October24 inference deadline
+
+Tests before implementation: retain38/38 native checks and the unchanged live acceptance criteria (20 real source/model/engine runs, >=18 exact classifications,20 citation checks,5 uncertainty requests). Preserve the failed8-case report. Runtime completed S08 with the supported answer after67.461seconds, but the65-second client deadline had already closed the connection. A fresh, unmodified80-second adapter run must validate the answer; the timed-out response remains a failure in its original report. Record every actual elapsed time, with no universal latency or independent billing claim.
+
+Implementation: increase only the bounded completion-request deadline from65 to80seconds. Discovery remains8seconds, max_tokens remains256, and at most1 correction remains allowed. Non-goals: no retries of transport failures, validation changes, vendor patches, new models, cloud spend or altered acceptance thresholds.
+
+Evaluation scratch retention: require0 explicit deletion operations in the live runner and preserve its isolated generated store for diagnosis. Keep all acceptance/report calculations unchanged. Implementation removes its terminal recursive cleanup and reports retention on the console; no user or workspace records are moved or replaced.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.

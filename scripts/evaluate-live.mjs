@@ -1,4 +1,4 @@
-import { readFileSync, mkdirSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
+import { readFileSync, mkdirSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { investigate } from '../src/investigator.mjs';
@@ -98,4 +98,4 @@ try {
   persist();
   console.log(JSON.stringify({ passed: report.passed, ...report.summary }));
   if (!report.passed) process.exitCode = 1;
-} finally { rmSync(directory, { recursive: true, force: true }); }
+} finally { console.log('Evaluation scratch store retained for diagnosis.'); }

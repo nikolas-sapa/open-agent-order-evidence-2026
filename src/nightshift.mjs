@@ -44,7 +44,7 @@ export class Nightshift {
         + JSON.stringify({ correction, supported: { status: assessment.status, causes: assessment.causes, options }, evidence: caseData.records }) }
     ] };
     const started = performance.now();
-    const response = await this.request('/chat/completions', { method: 'POST', body: JSON.stringify(request) }, 65000);
+    const response = await this.request('/chat/completions', { method: 'POST', body: JSON.stringify(request) }, 80000);
     const content = response.choices?.[0]?.message?.content;
     let candidate;
     try {

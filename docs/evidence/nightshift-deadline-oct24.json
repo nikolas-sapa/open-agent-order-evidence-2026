@@ -1,0 +1,58 @@
+{
+  "scope": "Fresh real Zetaris, Nightshift and Markovian S08 check; not the full matrix",
+  "completionDeadlineMs": 80000,
+  "originalRun": "The earlier 65-second run remains failed; Runtime finished after67.461seconds",
+  "at": "2026-10-24T05:54:43.937Z",
+  "elapsedMs": 55208.395874999995,
+  "status": "at-risk",
+  "causes": [
+    "unfilled quantity",
+    "late replenishment"
+  ],
+  "engine": "completed",
+  "provider": {
+    "kind": "nightshift",
+    "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+    "usage": {
+      "prompt_tokens": 1751,
+      "completion_tokens": 78,
+      "total_tokens": 1829
+    },
+    "cost": 0,
+    "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+    "attempts": 1,
+    "calls": [
+      {
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 1751,
+          "completion_tokens": 78,
+          "total_tokens": 1829
+        },
+        "cost": 0,
+        "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "receiptId": "rcpt_req_w1q92nia",
+        "privacyPath": "local-only",
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing"
+      }
+    ],
+    "validated": true
+  },
+  "receipts": [
+    {
+      "id": "9f8af10a-2f74-40d0-b23f-a7c68b4d20a2",
+      "source": "zetaris",
+      "method": "/api/proxy/sql-editor/sqls/run-query",
+      "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-08'",
+      "at": "2026-10-24T05:53:55.171Z",
+      "scope": "SYN-ORD-08",
+      "returnedIds": [
+        "synthetic-order::SYN-ORD-08::v1",
+        "synthetic-stock::SYN-STK-08::v1",
+        "synthetic-supplier::SYN-SUP-08::v1"
+      ],
+      "rowCount": 1
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "startedAt": "2026-10-23T10:38:07.023Z",
+  "startedAt": "2026-10-24T05:43:20.096Z",
   "mode": "live",
-  "node": "v24.19.0",
+  "node": "v24.22.1",
   "scope": "Synthetic evidence retrieved from real Zetaris; real Nightshift selections through the genuine vendored Markovian executor.",
   "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
   "completed": false,
@@ -9,7 +9,7 @@
     {
       "orderId": "SYN-ORD-01",
       "state": "completed",
-      "elapsedMs": 8004.407708,
+      "elapsedMs": 53804.59275,
       "actual": {
         "status": "on-track",
         "causes": []
@@ -28,15 +28,15 @@
         "status": "completed",
         "runId": "run-1",
         "chunks": 2,
-        "durationMs": 7987
+        "durationMs": 53693
       },
       "provider": {
         "kind": "nightshift",
         "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
         "usage": {
-          "prompt_tokens": 564,
+          "prompt_tokens": 447,
           "completion_tokens": 28,
-          "total_tokens": 592
+          "total_tokens": 475
         },
         "cost": 0,
         "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
@@ -50,13 +50,13 @@
           {
             "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "usage": {
-              "prompt_tokens": 564,
+              "prompt_tokens": 447,
               "completion_tokens": 28,
-              "total_tokens": 592
+              "total_tokens": 475
             },
             "cost": 0,
             "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_tiy82bek",
+            "receiptId": "rcpt_req_zf001bj9",
             "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "privacyPath": "local-only"
@@ -65,11 +65,11 @@
       },
       "receipts": [
         {
-          "id": "d0ec07ae-fefc-4bbc-b73a-b51f5b72b423",
+          "id": "6401fb3c-ab6a-4813-af6b-035b6cdace76",
           "source": "zetaris",
           "method": "/api/proxy/sql-editor/sqls/run-query",
           "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-01'",
-          "at": "2026-10-23T10:38:09.536Z",
+          "at": "2026-10-24T05:43:30.300Z",
           "scope": "SYN-ORD-01",
           "returnedIds": [
             "synthetic-order::SYN-ORD-01::v1",
@@ -82,36 +82,34 @@
     {
       "orderId": "SYN-ORD-02",
       "state": "completed",
-      "elapsedMs": 28903.25625,
+      "elapsedMs": 32718.594583000006,
       "actual": {
-        "status": "undetermined",
-        "causes": [
-          "unverified model selection"
-        ]
+        "status": "on-track",
+        "causes": []
       },
       "expected": {
         "orderId": "SYN-ORD-02",
         "status": "on-track",
         "causes": []
       },
-      "matches": false,
+      "matches": true,
       "referenceCoverage": true,
       "sourceVerified": true,
-      "modelVerified": false,
+      "modelVerified": true,
       "uncertaintyRequest": null,
       "engine": {
         "status": "completed",
         "runId": "run-2",
         "chunks": 2,
-        "durationMs": 28898
+        "durationMs": 32707
       },
       "provider": {
         "kind": "nightshift",
         "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
         "usage": {
-          "prompt_tokens": 776,
-          "completion_tokens": 32,
-          "total_tokens": 808
+          "prompt_tokens": 607,
+          "completion_tokens": 15,
+          "total_tokens": 622
         },
         "cost": 0,
         "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
@@ -119,33 +117,19 @@
         "requestedRoute": null,
         "underlyingModel": null,
         "privacyPath": null,
-        "attempts": 2,
-        "validated": false,
+        "attempts": 1,
+        "validated": true,
         "calls": [
           {
             "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "usage": {
-              "prompt_tokens": 724,
-              "completion_tokens": 18,
-              "total_tokens": 742
+              "prompt_tokens": 607,
+              "completion_tokens": 15,
+              "total_tokens": 622
             },
             "cost": 0,
             "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_qynhi2zw",
-            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "privacyPath": "local-only"
-          },
-          {
-            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "usage": {
-              "prompt_tokens": 776,
-              "completion_tokens": 32,
-              "total_tokens": 808
-            },
-            "cost": 0,
-            "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_uma972sc",
+            "receiptId": "rcpt_req_prxa6cl8",
             "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "privacyPath": "local-only"
@@ -154,11 +138,11 @@
       },
       "receipts": [
         {
-          "id": "cb5d2a5b-f6df-4c7e-bbcc-277b5fa24ac6",
+          "id": "b52af95e-3e65-4e9c-bbc1-d226b52ce4a2",
           "source": "zetaris",
           "method": "/api/proxy/sql-editor/sqls/run-query",
           "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-02'",
-          "at": "2026-10-23T10:38:18.753Z",
+          "at": "2026-10-24T05:44:34.064Z",
           "scope": "SYN-ORD-02",
           "returnedIds": [
             "synthetic-order::SYN-ORD-02::v1",
@@ -172,7 +156,7 @@
     {
       "orderId": "SYN-ORD-03",
       "state": "completed",
-      "elapsedMs": 14225.810375000001,
+      "elapsedMs": 19365.796791,
       "actual": {
         "status": "at-risk",
         "causes": [
@@ -195,15 +179,15 @@
         "status": "completed",
         "runId": "run-3",
         "chunks": 2,
-        "durationMs": 14214
+        "durationMs": 19320
       },
       "provider": {
         "kind": "nightshift",
         "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
         "usage": {
-          "prompt_tokens": 778,
+          "prompt_tokens": 618,
           "completion_tokens": 34,
-          "total_tokens": 812
+          "total_tokens": 652
         },
         "cost": 0,
         "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
@@ -217,13 +201,13 @@
           {
             "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "usage": {
-              "prompt_tokens": 778,
+              "prompt_tokens": 618,
               "completion_tokens": 34,
-              "total_tokens": 812
+              "total_tokens": 652
             },
             "cost": 0,
             "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_sjz1gihl",
+            "receiptId": "rcpt_req_esmasdty",
             "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "privacyPath": "local-only"
@@ -232,11 +216,11 @@
       },
       "receipts": [
         {
-          "id": "16c93b45-9bfd-4087-b1d8-d8c72d2e0db6",
+          "id": "39a009b5-e274-42af-a9d4-b694ca5c753e",
           "source": "zetaris",
           "method": "/api/proxy/sql-editor/sqls/run-query",
           "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-03'",
-          "at": "2026-10-23T10:38:50.616Z",
+          "at": "2026-10-24T05:44:56.077Z",
           "scope": "SYN-ORD-03",
           "returnedIds": [
             "synthetic-order::SYN-ORD-03::v1",
@@ -250,11 +234,11 @@
     {
       "orderId": "SYN-ORD-04",
       "state": "completed",
-      "elapsedMs": 54661.2155,
+      "elapsedMs": 10472.077375000008,
       "actual": {
         "status": "undetermined",
         "causes": [
-          "unverified model selection"
+          "missing evidence"
         ]
       },
       "expected": {
@@ -264,24 +248,24 @@
           "missing evidence"
         ]
       },
-      "matches": false,
+      "matches": true,
       "referenceCoverage": true,
       "sourceVerified": true,
-      "modelVerified": false,
+      "modelVerified": true,
       "uncertaintyRequest": null,
       "engine": {
         "status": "completed",
         "runId": "run-4",
         "chunks": 2,
-        "durationMs": 54632
+        "durationMs": 10462
       },
       "provider": {
         "kind": "nightshift",
         "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
         "usage": {
-          "prompt_tokens": 631,
-          "completion_tokens": 35,
-          "total_tokens": 666
+          "prompt_tokens": 455,
+          "completion_tokens": 33,
+          "total_tokens": 488
         },
         "cost": 0,
         "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
@@ -289,33 +273,19 @@
         "requestedRoute": null,
         "underlyingModel": null,
         "privacyPath": null,
-        "attempts": 2,
-        "validated": false,
+        "attempts": 1,
+        "validated": true,
         "calls": [
           {
             "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "usage": {
-              "prompt_tokens": 614,
-              "completion_tokens": 35,
-              "total_tokens": 649
+              "prompt_tokens": 455,
+              "completion_tokens": 33,
+              "total_tokens": 488
             },
             "cost": 0,
             "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_bxkw8pk0",
-            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "privacyPath": "local-only"
-          },
-          {
-            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
-            "usage": {
-              "prompt_tokens": 631,
-              "completion_tokens": 35,
-              "total_tokens": 666
-            },
-            "cost": 0,
-            "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
-            "receiptId": "rcpt_req_q2kn1pvh",
+            "receiptId": "rcpt_req_i6iwux7t",
             "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
             "privacyPath": "local-only"
@@ -324,11 +294,11 @@
       },
       "receipts": [
         {
-          "id": "1e9a66a2-b368-40a7-9bf6-7c501aab41ff",
+          "id": "dc05fd1c-039c-44e0-a444-06dc6f07eceb",
           "source": "zetaris",
           "method": "/api/proxy/sql-editor/sqls/run-query",
           "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-04'",
-          "at": "2026-10-23T10:39:01.310Z",
+          "at": "2026-10-24T05:45:10.069Z",
           "scope": "SYN-ORD-04",
           "returnedIds": [
             "synthetic-order::SYN-ORD-04::v1",
@@ -340,11 +310,241 @@
     },
     {
       "orderId": "SYN-ORD-05",
+      "state": "completed",
+      "elapsedMs": 34539.984125,
+      "actual": {
+        "status": "undetermined",
+        "causes": [
+          "stale evidence"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-05",
+        "status": "undetermined",
+        "causes": [
+          "stale evidence"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "sourceVerified": true,
+      "modelVerified": true,
+      "uncertaintyRequest": null,
+      "engine": {
+        "status": "completed",
+        "runId": "run-5",
+        "chunks": 2,
+        "durationMs": 34519
+      },
+      "provider": {
+        "kind": "nightshift",
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 620,
+          "completion_tokens": 34,
+          "total_tokens": 654
+        },
+        "cost": 0,
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+        "receiptId": null,
+        "requestedRoute": null,
+        "underlyingModel": null,
+        "privacyPath": null,
+        "attempts": 1,
+        "validated": true,
+        "calls": [
+          {
+            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "usage": {
+              "prompt_tokens": 620,
+              "completion_tokens": 34,
+              "total_tokens": 654
+            },
+            "cost": 0,
+            "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+            "receiptId": "rcpt_req_bpxmi5pi",
+            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "privacyPath": "local-only"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "id": "d543ca00-3bce-49e1-8eef-17e6ec6fcb25",
+          "source": "zetaris",
+          "method": "/api/proxy/sql-editor/sqls/run-query",
+          "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-05'",
+          "at": "2026-10-24T05:45:21.264Z",
+          "scope": "SYN-ORD-05",
+          "returnedIds": [
+            "synthetic-order::SYN-ORD-05::v1",
+            "synthetic-stock::SYN-STK-05::v1",
+            "synthetic-supplier::SYN-SUP-05::v1"
+          ],
+          "rowCount": 1
+        }
+      ]
+    },
+    {
+      "orderId": "SYN-ORD-06",
+      "state": "completed",
+      "elapsedMs": 12453.868084000016,
+      "actual": {
+        "status": "on-track",
+        "causes": []
+      },
+      "expected": {
+        "orderId": "SYN-ORD-06",
+        "status": "on-track",
+        "causes": []
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "sourceVerified": true,
+      "modelVerified": true,
+      "uncertaintyRequest": null,
+      "engine": {
+        "status": "completed",
+        "runId": "run-6",
+        "chunks": 2,
+        "durationMs": 12409
+      },
+      "provider": {
+        "kind": "nightshift",
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 606,
+          "completion_tokens": 15,
+          "total_tokens": 621
+        },
+        "cost": 0,
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+        "receiptId": null,
+        "requestedRoute": null,
+        "underlyingModel": null,
+        "privacyPath": null,
+        "attempts": 1,
+        "validated": true,
+        "calls": [
+          {
+            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "usage": {
+              "prompt_tokens": 606,
+              "completion_tokens": 15,
+              "total_tokens": 621
+            },
+            "cost": 0,
+            "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+            "receiptId": "rcpt_req_jo4og8gw",
+            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "privacyPath": "local-only"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "id": "d3e2a767-9fe9-409e-bb14-6055c681e255",
+          "source": "zetaris",
+          "method": "/api/proxy/sql-editor/sqls/run-query",
+          "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-06'",
+          "at": "2026-10-24T05:45:55.376Z",
+          "scope": "SYN-ORD-06",
+          "returnedIds": [
+            "synthetic-order::SYN-ORD-06::v1",
+            "synthetic-stock::SYN-STK-06::v1",
+            "synthetic-supplier::SYN-SUP-06::v1"
+          ],
+          "rowCount": 1
+        }
+      ]
+    },
+    {
+      "orderId": "SYN-ORD-07",
+      "state": "completed",
+      "elapsedMs": 64669.22391599999,
+      "actual": {
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "expected": {
+        "orderId": "SYN-ORD-07",
+        "status": "at-risk",
+        "causes": [
+          "late replenishment"
+        ]
+      },
+      "matches": true,
+      "referenceCoverage": true,
+      "sourceVerified": true,
+      "modelVerified": true,
+      "uncertaintyRequest": null,
+      "engine": {
+        "status": "completed",
+        "runId": "run-7",
+        "chunks": 2,
+        "durationMs": 64637
+      },
+      "provider": {
+        "kind": "nightshift",
+        "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+        "usage": {
+          "prompt_tokens": 1718,
+          "completion_tokens": 68,
+          "total_tokens": 1786
+        },
+        "cost": 0,
+        "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+        "receiptId": null,
+        "requestedRoute": null,
+        "underlyingModel": null,
+        "privacyPath": null,
+        "attempts": 1,
+        "validated": true,
+        "calls": [
+          {
+            "model": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "usage": {
+              "prompt_tokens": 1718,
+              "completion_tokens": 68,
+              "total_tokens": 1786
+            },
+            "cost": 0,
+            "costBasis": "Nightshift-reported actual_usd; not independently verified billing",
+            "receiptId": "rcpt_req_x28s8cup",
+            "requestedRoute": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "underlyingModel": "webllm/Qwen2.5-1.5B-Instruct-q4f16_1-MLC",
+            "privacyPath": "local-only"
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "id": "c37ee8a1-6e3b-4096-801a-f2d21a27dcc1",
+          "source": "zetaris",
+          "method": "/api/proxy/sql-editor/sqls/run-query",
+          "query": "SELECT payload FROM order_evidence.records WHERE order_id = 'SYN-ORD-07'",
+          "at": "2026-10-24T05:46:09.146Z",
+          "scope": "SYN-ORD-07",
+          "returnedIds": [
+            "synthetic-order::SYN-ORD-07::v1",
+            "synthetic-stock::SYN-STK-07::v1",
+            "synthetic-supplier::SYN-SUP-07::v1"
+          ],
+          "rowCount": 1
+        }
+      ]
+    },
+    {
+      "orderId": "SYN-ORD-08",
       "state": "failed",
-      "elapsedMs": 12267.071333,
+      "elapsedMs": 71808.18699999998,
       "observedCalls": [],
       "error": {
-        "code": "UPSTREAM_FAILURE"
+        "code": "TIMEOUT"
       }
     }
   ],
@@ -355,14 +555,14 @@
     "billing verification",
     "Cursor contribution"
   ],
-  "finishedAt": "2026-10-23T10:40:05.108Z",
+  "finishedAt": "2026-10-24T05:48:19.990Z",
   "summary": {
-    "attempted": 5,
-    "exactClassifications": 2,
-    "citationCoverage": 4,
-    "sourceVerified": 4,
-    "modelVerified": 2,
-    "completedEngineRuns": 4,
+    "attempted": 8,
+    "exactClassifications": 7,
+    "citationCoverage": 7,
+    "sourceVerified": 7,
+    "modelVerified": 7,
+    "completedEngineRuns": 7,
     "uncertaintyRequests": 0
   },
   "passed": false
