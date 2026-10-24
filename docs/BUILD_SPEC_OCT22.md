@@ -69,6 +69,12 @@ Implementation: increase only the bounded completion-request deadline from65 to8
 
 Evaluation scratch retention: require0 explicit deletion operations in the live runner and preserve its isolated generated store for diagnosis. Keep all acceptance/report calculations unchanged. Implementation removes its terminal recursive cleanup and reports retention on the console; no user or workspace records are moved or replaced.
 
+## October24 request cost cap
+
+Tests before implementation: every completion request must include the implemented public max_price0 option, with the same discovered local model,256-token cap, fresh scope and strict three-key validation. Retain38/38 native tests. Require fresh real S07/S08 validations before another20-case run; record actual usage and latency rather than inferring a single phase. Previous timed-out runs remain failed. Full acceptance thresholds stay unchanged.
+
+Implementation: set max_price:0 in the completion body. Shipped proxy.js accepts a zero request price, web-daemon maps it to a zero budget, and orchestrator's optional refinement/verifier/consensus gates require remaining positive budget. The concrete model pin remains unchanged. Non-goals: no vendor patch, global preferences, unsupported private options, cloud credentials, further deadline increases or claims about the unobserved cause of previous extra phases.
+
 ## Non-goals
 
 No paid infrastructure, public deployment, ERP writes, real customer data, external supplier messages, automatic purchasing/approval, hidden reasoning, invented sponsor/credit/Cursor contribution, invented live evaluation, changed track or new features beyond the approved investigation.
